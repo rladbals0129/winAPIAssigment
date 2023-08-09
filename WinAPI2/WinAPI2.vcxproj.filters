@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="2D FrameWork">
+      <UniqueIdentifier>{24f5ff0a-b5e2-4a5f-bd83-9c8e0e7f1428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2D FrameWork\DesignPattern">
+      <UniqueIdentifier>{d6853c4e-db49-484a-9c15-a3bdf778008f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2D FrameWork\DesignPattern\Singleton">
+      <UniqueIdentifier>{46046ed5-c7cd-4468-9433-8615760cb19a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2D FrameWork\FrameWorkManager">
+      <UniqueIdentifier>{2b3dba43-f45f-42bd-b779-42ce487bd674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2D FrameWork\GameCore">
+      <UniqueIdentifier>{6817f10f-bcc1-49af-8f6f-8936fc9a12c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2D FrameWork\ManagerClass">
+      <UniqueIdentifier>{fec0c4c8-519c-42cd-a22e-087225163782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2D FrameWork\Utility">
+      <UniqueIdentifier>{d9cce856-4f3d-438f-badf-896446938ba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2D FrameWork\PCH">
+      <UniqueIdentifier>{b6a4e248-720a-4230-a166-f79a32d45b3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2D FrameWork\Utility\Math">
+      <UniqueIdentifier>{4198edce-12aa-4a0b-bb78-83877531ea7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2D FrameWork\ManagerClass\00과제매니저">
+      <UniqueIdentifier>{735a86d6-6707-49dd-86ca-492bd62edee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2D FrameWork\GImage">
+      <UniqueIdentifier>{c2040ade-5180-4a76-b7c4-b70c6705d93a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report">
+      <UniqueIdentifier>{99d610ac-757a-4295-a792-36dda9eb914c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\0629제로공격">
+      <UniqueIdentifier>{24abc2cb-eeaf-46dc-bdf5-49c88c125ab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\0629프레임이미지처리">
+      <UniqueIdentifier>{734f7021-cb7d-4ee4-9e46-a113bf7e5854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\두더지잡기">
+      <UniqueIdentifier>{e0069846-f4bf-416d-95b3-0103f1c38bc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\미니맵이동">
+      <UniqueIdentifier>{95a2b496-6c18-4073-a230-6518903b8ac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\슬라이드퍼즐11">
+      <UniqueIdentifier>{ddd29fa8-df38-430e-9178-5838a91846d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\아날로그시계">
+      <UniqueIdentifier>{cdfd7546-5790-43e8-81b2-72a4d0acd199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\종스크롤슈팅">
+      <UniqueIdentifier>{52d54ca8-afa1-4ade-be2e-3321c52fc029}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\지렁이">
+      <UniqueIdentifier>{e2fff8d5-a1a2-4137-9478-087d5e6f9229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\틀린그림찾기">
+      <UniqueIdentifier>{1460ddae-682d-4282-b3d2-9c2ee8a3be66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\포발사">
+      <UniqueIdentifier>{e50105cf-2939-4eec-af2a-aa607112409e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\포발사\자동">
+      <UniqueIdentifier>{35b4520d-6931-4a30-b58d-cdff4d812a44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\포발사\수동">
+      <UniqueIdentifier>{e8b79cdd-12cb-44da-9b4c-9a8ce64ff666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\포발사\총알충돌">
+      <UniqueIdentifier>{dd7d219c-db8c-4b09-a4f9-3c14f0280be6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\포발사\총알중력">
+      <UniqueIdentifier>{c04d0a41-144e-4f8a-b6a1-dc711d243665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\횡스크롤슈팅1:1">
+      <UniqueIdentifier>{31f7982f-5ccd-4f13-b8e8-d5fb003ec5b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\0630벽타기">
+      <UniqueIdentifier>{11ba8052-3143-440d-87f8-86f91cdac4a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\0703레이싱게임">
+      <UniqueIdentifier>{ff2c101d-160f-4dda-9430-4afeb5579f3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\0704블랙홀">
+      <UniqueIdentifier>{44b67461-dcb3-4db7-be54-59688487b95f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="WinAPI2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>2D FrameWork\PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="SingletonBase.h">
+      <Filter>2D FrameWork\DesignPattern\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonMacroFunction.h">
+      <Filter>2D FrameWork\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomFunction.h">
+      <Filter>2D FrameWork\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="C3DMatrix.h">
+      <Filter>2D FrameWork\Utility\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="C3DVector.h">
+      <Filter>2D FrameWork\Utility\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="GameNode.h">
+      <Filter>2D FrameWork\GameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyManager.h">
+      <Filter>2D FrameWork\FrameWorkManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame2.h">
+      <Filter>소스 파일\Report\두더지잡기</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame3.h">
+      <Filter>소스 파일\Report\종스크롤슈팅</Filter>
+    </ClInclude>
+    <ClInclude Include="Poop.h">
+      <Filter>소스 파일\Report\종스크롤슈팅</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>소스 파일\Report\종스크롤슈팅</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportManager.h">
+      <Filter>2D FrameWork\ManagerClass\00과제매니저</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame4.h">
+      <Filter>소스 파일\Report\횡스크롤슈팅1:1</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame5.h">
+      <Filter>소스 파일\Report\틀린그림찾기</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame6.h">
+      <Filter>소스 파일\Report\아날로그시계</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame7.h">
+      <Filter>소스 파일\Report\포발사\수동</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame8.h">
+      <Filter>소스 파일\Report\포발사\자동</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame9.h">
+      <Filter>소스 파일\Report\포발사\총알충돌</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame10.h">
+      <Filter>소스 파일\Report\포발사\총알중력</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame11.h">
+      <Filter>소스 파일\Report\슬라이드퍼즐11</Filter>
+    </ClInclude>
+    <ClInclude Include="GImage.h">
+      <Filter>2D FrameWork\GImage</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame12.h">
+      <Filter>소스 파일\Report\미니맵이동</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame13.h">
+      <Filter>소스 파일\Report\지렁이</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame14.h">
+      <Filter>소스 파일\Report\0629제로공격</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame15.h">
+      <Filter>소스 파일\Report\0629프레임이미지처리</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageManager.h">
+      <Filter>2D FrameWork\FrameWorkManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame16.h">
+      <Filter>소스 파일\Report\0630벽타기</Filter>
+    </ClInclude>
+    <ClInclude Include="Player0630.h">
+      <Filter>소스 파일\Report\0630벽타기</Filter>
+    </ClInclude>
+    <ClInclude Include="Map0630.h">
+      <Filter>소스 파일\Report\0630벽타기</Filter>
+    </ClInclude>
+    <ClInclude Include="CarRaceGame.h">
+      <Filter>소스 파일\Report\0703레이싱게임</Filter>
+    </ClInclude>
+    <ClInclude Include="BlackHoll.h">
+      <Filter>소스 파일\Report\0704블랙홀</Filter>
+    </ClInclude>
+    <ClInclude Include="Hole.h">
+      <Filter>소스 파일\Report\0704블랙홀</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>소스 파일\Report\0704블랙홀</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinAPI2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>2D FrameWork\PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="C3DVector.cpp">
+      <Filter>2D FrameWork\Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="C3DMatrix.cpp">
+      <Filter>2D FrameWork\Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="GameNode.cpp">
+      <Filter>2D FrameWork\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyManager.cpp">
+      <Filter>2D FrameWork\FrameWorkManager</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame2.cpp">
+      <Filter>소스 파일\Report\두더지잡기</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame3.cpp">
+      <Filter>소스 파일\Report\종스크롤슈팅</Filter>
+    </ClCompile>
+    <ClCompile Include="Poop.cpp">
+      <Filter>소스 파일\Report\종스크롤슈팅</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>소스 파일\Report\종스크롤슈팅</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportManager.cpp">
+      <Filter>2D FrameWork\ManagerClass\00과제매니저</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame4.cpp">
+      <Filter>소스 파일\Report\횡스크롤슈팅1:1</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame5.cpp">
+      <Filter>소스 파일\Report\틀린그림찾기</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame6.cpp">
+      <Filter>소스 파일\Report\아날로그시계</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame7.cpp">
+      <Filter>소스 파일\Report\포발사\수동</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame8.cpp">
+      <Filter>소스 파일\Report\포발사\자동</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame9.cpp">
+      <Filter>소스 파일\Report\포발사\총알충돌</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame10.cpp">
+      <Filter>소스 파일\Report\포발사\총알중력</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame11.cpp">
+      <Filter>소스 파일\Report\슬라이드퍼즐11</Filter>
+    </ClCompile>
+    <ClCompile Include="GImage.cpp">
+      <Filter>2D FrameWork\GImage</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame12.cpp">
+      <Filter>소스 파일\Report\미니맵이동</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame13.cpp">
+      <Filter>소스 파일\Report\지렁이</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame14.cpp">
+      <Filter>소스 파일\Report\0629제로공격</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame15.cpp">
+      <Filter>소스 파일\Report\0629프레임이미지처리</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageManager.cpp">
+      <Filter>2D FrameWork\FrameWorkManager</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame16.cpp">
+      <Filter>소스 파일\Report\0630벽타기</Filter>
+    </ClCompile>
+    <ClCompile Include="Player0630.cpp">
+      <Filter>소스 파일\Report\0630벽타기</Filter>
+    </ClCompile>
+    <ClCompile Include="Map0630.cpp">
+      <Filter>소스 파일\Report\0630벽타기</Filter>
+    </ClCompile>
+    <ClCompile Include="CarRaceGame.cpp">
+      <Filter>소스 파일\Report\0703레이싱게임</Filter>
+    </ClCompile>
+    <ClCompile Include="BlackHoll.cpp">
+      <Filter>소스 파일\Report\0704블랙홀</Filter>
+    </ClCompile>
+    <ClCompile Include="Hole.cpp">
+      <Filter>소스 파일\Report\0704블랙홀</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>소스 파일\Report\0704블랙홀</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WinAPI2.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="WinAPI2.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
