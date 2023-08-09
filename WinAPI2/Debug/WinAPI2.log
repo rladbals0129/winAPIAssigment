@@ -1,2 +1,26 @@
-﻿  GameNode.cpp
-  WinAPI2.vcxproj -> C:\Users\김유민\source\repos\WinAPI2\Debug\WinAPI2.exe
+﻿  C3DVector.cpp
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(51,80): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(51,61): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(51,40): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(52,91): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(52,72): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(52,58): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(53,101): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(53,89): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(53,58): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(54,90): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(54,78): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(54,40): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(55,82): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(55,61): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(55,40): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(56,93): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(56,72): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(56,58): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(57,104): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(57,90): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(57,58): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(58,92): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(58,78): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\언리얼\Desktop\과제내용\winAPI2\WinAPI2\C3DVector.cpp(58,40): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  WinAPI2.vcxproj -> C:\Users\언리얼\Desktop\과제내용\winAPI2\Debug\WinAPI2.exe

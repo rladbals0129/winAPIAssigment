@@ -216,6 +216,9 @@
     <ClInclude Include="Object.h">
       <Filter>소스 파일\Report\0704블랙홀</Filter>
     </ClInclude>
+    <ClInclude Include="FontManager.h">
+      <Filter>2D FrameWork\FrameWorkManager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinAPI2.cpp">
@@ -313,6 +316,9 @@
     </ClCompile>
     <ClCompile Include="Object.cpp">
       <Filter>소스 파일\Report\0704블랙홀</Filter>
+    </ClCompile>
+    <ClCompile Include="FontManager.cpp">
+      <Filter>2D FrameWork\FrameWorkManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

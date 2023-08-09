@@ -8,7 +8,8 @@
 #include "MainGame16.h"
 #include "CarRaceGame.h"
 #include "BlackHoll.h"
-#define GAME_CNT 8
+#include "C3DVector.h"
+
 
 struct BUTTON
 {
@@ -16,13 +17,28 @@ struct BUTTON
 	char Text[128];
 
 };
+struct Button
+{
+	RECT rect;
+	string text;
+
+	Button(int left, int top, int width, int height, const string& buttonText)
+	{
+		rect.left = left;
+		rect.top = top;
+		rect.right = left + width;
+		rect.bottom = top + height;
+		text = buttonText;
+	}
+};
 enum SELECT
 {
 	LOBBY,
 	MG11, MG12,
 	MG13, MG14,
 	MG15, MG16,
-	CAR, BLACKHOLE
+	CAR, BLACKHOLE,
+	C3DVECTOR
 
 };
 
@@ -47,11 +63,16 @@ private:
 	MainGame16* mg16;
 	CarRaceGame* car;
 	BlackHoll* _blackHole;
-
+	C3DVector* _c3dvector;
 	SELECT _select;
-	BUTTON _bt[GAME_CNT];
-
+	
 	int _gameNum;
+	//BUTTON _bt[GAME_CNT];
+
+
+	vector<Button> _buttons;
+	const int _buttonWidth = 150;
+	const int _buttonHeight = 100;
 	
 public:
 	HRESULT init(void);
@@ -61,5 +82,6 @@ public:
 
 
 	void lobbyRender(void);
+	void onButtonClick(int buttonIndex);
 };
 

@@ -4,24 +4,46 @@
 HRESULT ReportManager::init()
 {
 	GameNode::init(true);
-
-	_gameNum = 0;
-
-	for (int i = 0; i < GAME_CNT; i++)
+	int x, y;
+	const vector<string> buttonTexts = {
+	"슬라이드퍼즐", "맵이동" ,"지렁이" , "제로공격","프레임이미지", "벽타기","레이싱","블랙홀","3D매트릭스"};
+	for (int i = 0; i < buttonTexts.size(); i++)
 	{
-		if (i < 4)
-		{ 
-			_bt[i].rc = RectMakeCenter(100, 100 + (i * 150), 100, 80);
+		if (i < 10)
+		{
+			x = (i < 5) ? 0 : 350 - _buttonWidth;
 		}
-		else if (i >= 4)
+		else if (i < 20)
 		{
-			_bt[i].rc = RectMakeCenter(WINSIZE_X / 4, 100 + ((i - 4) * 150), 100, 80);
-		}/*
-		else
-		{
-			_bt[i].rc = RectMakeCenter(WINSIZE_X - 100, 100 + ((i - 5) * 150), 100, 80);
-		}*/
+			x = (i < 15) ? 400 : 750 - _buttonWidth;
+		}
+		y = 100 + i % 5 * (_buttonHeight + 20);
+		_buttons.emplace_back(x, y, _buttonWidth, _buttonHeight, buttonTexts[i]);
 	}
+	_gameNum = 0;
+	/*wsprintf(_bt[0].Text, "슬라이드퍼즐");
+	wsprintf(_bt[1].Text, "맵이동");
+	wsprintf(_bt[2].Text, "지렁이");
+	wsprintf(_bt[3].Text, "제로공격");
+	wsprintf(_bt[4].Text, "프레임이미지");
+	wsprintf(_bt[5].Text, "벽 타기");
+	wsprintf(_bt[6].Text, "레이싱");
+	wsprintf(_bt[7].Text, "블랙홀");*/
+	//for (int i = 0; i < GAME_CNT; i++)
+	//{
+	//	if (i < 4)
+	//	{ 
+	//		_bt[i].rc = RectMakeCenter(100, 100 + (i * 150), 100, 80);
+	//	}
+	//	else if (i >= 4)
+	//	{
+	//		_bt[i].rc = RectMakeCenter(WINSIZE_X / 4, 100 + ((i - 4) * 150), 100, 80);
+	//	}/*
+	//	else
+	//	{
+	//		_bt[i].rc = RectMakeCenter(WINSIZE_X - 100, 100 + ((i - 5) * 150), 100, 80);
+	//	}*/
+	//}
 
 	return S_OK;
 }
@@ -37,9 +59,10 @@ void ReportManager::update(void)
 	{
 		if (KEYMANAGER->isOnceKeyDown(VK_LBUTTON))
 		{
-			for (int i = 0; i < GAME_CNT; i++)
+
+			for (int i = 0; i < _buttons.size(); i++)
 			{
-				if (PtInRect(&_bt[i].rc, _ptMouse))
+				if (PtInRect(&_buttons[i].rect, _ptMouse))
 				{
 					_gameNum = i;
 					switch (i)
@@ -98,8 +121,12 @@ void ReportManager::update(void)
 						_select = BLACKHOLE;
 						break;
 					case 8:
+						_c3dvector = new C3DVector;
+						_c3dvector->init();
 
+						_select = C3DVECTOR;
 						break;
+
 					default:
 						break;
 					}
@@ -141,6 +168,10 @@ void ReportManager::update(void)
 	{
 		_blackHole->update();
 	}
+	if (_select == C3DVECTOR)
+	{
+		_c3dvector->update();
+	}
 	//cout << _gameNum << endl;
 	//cout << _select << endl;
 
@@ -172,6 +203,8 @@ void ReportManager::update(void)
 
 			case 7: _blackHole->release();
 				break;
+			case 8: _c3dvector->release();
+				break;
 			}
 		
 	
@@ -197,14 +230,14 @@ void ReportManager::update(void)
 void ReportManager::render(void)
 {
 	PatBlt(getMemDC(), 0, 0, WINSIZE_X, WINSIZE_Y, BLACKNESS);
-	wsprintf(_bt[0].Text, "슬라이드퍼즐");
+	/*wsprintf(_bt[0].Text, "슬라이드퍼즐");
 	wsprintf(_bt[1].Text, "맵이동");
 	wsprintf(_bt[2].Text, "지렁이");
 	wsprintf(_bt[3].Text, "제로공격");
 	wsprintf(_bt[4].Text, "프레임이미지");
 	wsprintf(_bt[5].Text, "벽 타기");
 	wsprintf(_bt[6].Text, "레이싱");
-	wsprintf(_bt[7].Text, "블랙홀");
+	wsprintf(_bt[7].Text, "블랙홀");*/
 	if (_select == LOBBY)
 	{
 		lobbyRender();
@@ -241,6 +274,10 @@ void ReportManager::render(void)
 	{
 		_blackHole->render();
 	}
+	if (_select == C3DVECTOR)
+	{
+		_c3dvector->render();
+	}
 	
 //	mg12->render();
 //	mg13->render();
@@ -251,13 +288,19 @@ void ReportManager::render(void)
 
 void ReportManager::lobbyRender(void)
 {
-	for (int i = 0; i < GAME_CNT; i++)
+	for (int i = 0; i < _buttons.size(); i++)
 	{
-		DrawRectMake(getMemDC(), _bt[i].rc);
-		TextOut(getMemDC(), (_bt[i].rc.left + _bt[i].rc.right) / 2 - strlen(_bt[i].Text) * 4,
-			(_bt[i].rc.top + _bt[i].rc.bottom) / 2 - strlen(_bt[i].Text),
-			_bt[i].Text, strlen(_bt[i].Text));
+		DrawRectMake(getMemDC(), _buttons[i].rect);
+	/*	TextOut(getMemDC(), (_buttons[i].rect.left + _buttons[i].rect.right) / 2 - strlen(_buttons[i].Text) * 4,
+			(_buttons[i].rc.top + _buttons[i].rc.bottom) / 2 - strlen(_buttons[i].Text),
+			_buttons[i].Text, strlen(_buttons[i].Text));*/
+		FONTMANAGER->drawText(getMemDC(), _buttons[i].rect.left + 25, _buttons[i].rect.top + 30, "바탕", 15, FW_BOLD, (char*)_buttons[i].text.c_str(), static_cast<int>(_buttons[i].text.length()), RGB(0, 0, 0));
 		this->getBackBuffer()->render(getHDC());
 	}
 
+
+}
+
+void ReportManager::onButtonClick(int buttonIndex)
+{
 }

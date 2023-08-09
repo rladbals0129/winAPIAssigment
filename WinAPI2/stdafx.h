@@ -38,6 +38,7 @@ using namespace std;
 #include "RandomFunction.h"
 #include "KeyManager.h"
 #include "ImageManager.h"
+#include "FontManager.h"
 
 
 
@@ -45,6 +46,7 @@ using namespace std;
 #define RND RandomFunction::getSingleton()
 #define KEYMANAGER KeyManager::getSingleton()
 #define IMAGEMANAGER ImageManager::getSingleton()
+#define FONTMANAGER FontManager::getSingleton()
 
 #define WINNAME		(LPTSTR)(TEXT("WindowsAPI"))
 
