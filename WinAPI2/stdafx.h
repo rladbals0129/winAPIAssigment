@@ -39,7 +39,9 @@ using namespace std;
 #include "KeyManager.h"
 #include "ImageManager.h"
 #include "FontManager.h"
+#include "Utils.h"
 
+using namespace MY_UTIL;
 
 
 

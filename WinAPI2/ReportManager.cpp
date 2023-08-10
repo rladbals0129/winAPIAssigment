@@ -6,7 +6,7 @@ HRESULT ReportManager::init()
 	GameNode::init(true);
 	int x, y;
 	const vector<string> buttonTexts = {
-	"슬라이드퍼즐", "맵이동" ,"지렁이" , "제로공격","프레임이미지", "벽타기","레이싱","블랙홀","3D매트릭스"};
+	"슬라이드퍼즐", "맵이동" ,"지렁이" , "제로공격","프레임이미지", "벽타기","레이싱","블랙홀","3D매트릭스","슈팅게임"};
 	for (int i = 0; i < buttonTexts.size(); i++)
 	{
 		if (i < 10)
@@ -21,29 +21,6 @@ HRESULT ReportManager::init()
 		_buttons.emplace_back(x, y, _buttonWidth, _buttonHeight, buttonTexts[i]);
 	}
 	_gameNum = 0;
-	/*wsprintf(_bt[0].Text, "슬라이드퍼즐");
-	wsprintf(_bt[1].Text, "맵이동");
-	wsprintf(_bt[2].Text, "지렁이");
-	wsprintf(_bt[3].Text, "제로공격");
-	wsprintf(_bt[4].Text, "프레임이미지");
-	wsprintf(_bt[5].Text, "벽 타기");
-	wsprintf(_bt[6].Text, "레이싱");
-	wsprintf(_bt[7].Text, "블랙홀");*/
-	//for (int i = 0; i < GAME_CNT; i++)
-	//{
-	//	if (i < 4)
-	//	{ 
-	//		_bt[i].rc = RectMakeCenter(100, 100 + (i * 150), 100, 80);
-	//	}
-	//	else if (i >= 4)
-	//	{
-	//		_bt[i].rc = RectMakeCenter(WINSIZE_X / 4, 100 + ((i - 4) * 150), 100, 80);
-	//	}/*
-	//	else
-	//	{
-	//		_bt[i].rc = RectMakeCenter(WINSIZE_X - 100, 100 + ((i - 5) * 150), 100, 80);
-	//	}*/
-	//}
 
 	return S_OK;
 }
@@ -55,6 +32,7 @@ void ReportManager::release(void)
 
 void ReportManager::update(void)
 {
+	GameNode::update();
 	if (_select == LOBBY)
 	{
 		if (KEYMANAGER->isOnceKeyDown(VK_LBUTTON))
@@ -126,6 +104,11 @@ void ReportManager::update(void)
 
 						_select = C3DVECTOR;
 						break;
+					case 9:
+						_shooting = new ShootingMap;
+						_shooting->init();
+
+						_select = SHOOTING;
 
 					default:
 						break;
@@ -172,6 +155,10 @@ void ReportManager::update(void)
 	{
 		_c3dvector->update();
 	}
+	if (_select == SHOOTING)
+	{
+		_shooting->update();
+	}
 	//cout << _gameNum << endl;
 	//cout << _select << endl;
 
@@ -205,6 +192,10 @@ void ReportManager::update(void)
 				break;
 			case 8: _c3dvector->release();
 				break;
+			case 9:
+				_shooting->release();
+				break;
+
 			}
 		
 	
@@ -278,7 +269,11 @@ void ReportManager::render(void)
 	{
 		_c3dvector->render();
 	}
-	
+	if (_select == SHOOTING)
+	{
+		_shooting->render();
+	}
+	this->getBackBuffer()->render(getHDC());
 //	mg12->render();
 //	mg13->render();
 //	mg14->render();
@@ -291,11 +286,9 @@ void ReportManager::lobbyRender(void)
 	for (int i = 0; i < _buttons.size(); i++)
 	{
 		DrawRectMake(getMemDC(), _buttons[i].rect);
-	/*	TextOut(getMemDC(), (_buttons[i].rect.left + _buttons[i].rect.right) / 2 - strlen(_buttons[i].Text) * 4,
-			(_buttons[i].rc.top + _buttons[i].rc.bottom) / 2 - strlen(_buttons[i].Text),
-			_buttons[i].Text, strlen(_buttons[i].Text));*/
+	
 		FONTMANAGER->drawText(getMemDC(), _buttons[i].rect.left + 25, _buttons[i].rect.top + 30, "바탕", 15, FW_BOLD, (char*)_buttons[i].text.c_str(), static_cast<int>(_buttons[i].text.length()), RGB(0, 0, 0));
-		this->getBackBuffer()->render(getHDC());
+	
 	}
 
 

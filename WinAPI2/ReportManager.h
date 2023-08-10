@@ -9,14 +9,9 @@
 #include "CarRaceGame.h"
 #include "BlackHoll.h"
 #include "C3DVector.h"
+#include "ShootingMap.h"
 
 
-struct BUTTON
-{
-	RECT rc;
-	char Text[128];
-
-};
 struct Button
 {
 	RECT rect;
@@ -38,7 +33,7 @@ enum SELECT
 	MG13, MG14,
 	MG15, MG16,
 	CAR, BLACKHOLE,
-	C3DVECTOR
+	C3DVECTOR,SHOOTING
 
 };
 
@@ -62,6 +57,7 @@ private:
 	MainGame15* mg15;
 	MainGame16* mg16;
 	CarRaceGame* car;
+	ShootingMap* _shooting;
 	BlackHoll* _blackHole;
 	C3DVector* _c3dvector;
 	SELECT _select;

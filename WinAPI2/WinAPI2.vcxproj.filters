@@ -103,6 +103,9 @@
     <Filter Include="소스 파일\Report\0704블랙홀">
       <UniqueIdentifier>{44b67461-dcb3-4db7-be54-59688487b95f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Report\0810슈팅게임">
+      <UniqueIdentifier>{4ea4bf77-e449-4617-96c5-2a6e12faf3c0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -219,6 +222,18 @@
     <ClInclude Include="FontManager.h">
       <Filter>2D FrameWork\FrameWorkManager</Filter>
     </ClInclude>
+    <ClInclude Include="Flame.h">
+      <Filter>소스 파일\Report\0810슈팅게임</Filter>
+    </ClInclude>
+    <ClInclude Include="Rocket.h">
+      <Filter>소스 파일\Report\0810슈팅게임</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>소스 파일\Report\0810슈팅게임</Filter>
+    </ClInclude>
+    <ClInclude Include="ShootingMap.h">
+      <Filter>소스 파일\Report\0810슈팅게임</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinAPI2.cpp">
@@ -319,6 +334,18 @@
     </ClCompile>
     <ClCompile Include="FontManager.cpp">
       <Filter>2D FrameWork\FrameWorkManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Flame.cpp">
+      <Filter>소스 파일\Report\0810슈팅게임</Filter>
+    </ClCompile>
+    <ClCompile Include="Rocket.cpp">
+      <Filter>소스 파일\Report\0810슈팅게임</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>소스 파일\Report\0810슈팅게임</Filter>
+    </ClCompile>
+    <ClCompile Include="ShootingMap.cpp">
+      <Filter>소스 파일\Report\0810슈팅게임</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

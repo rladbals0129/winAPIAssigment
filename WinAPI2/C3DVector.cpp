@@ -17,7 +17,7 @@ void C3DVector::release()
 
 void C3DVector::update()
 {
-    GameNode::update();
+    //GameNode::update();
     if (KEYMANAGER->isStayKeyDown(VK_UP))
     {
         _xAngle += ROTATION_SPEED;
@@ -98,13 +98,13 @@ void C3DVector::Draw3DLine(HDC hdc, Point3D startPoint, Point3D endPoint)
 
 Point3D C3DVector::Rotate3D(const Point3D& p)
 {
-    float sinX = sin(_xAngle);
-    float cosX = cos(_xAngle);
-    float sinY = sin(_yAngle);
-    float cosY = cos(_yAngle);
+    float sinX = sin(REDIAN(_xAngle));
+    float cosX = cos(REDIAN(_xAngle));
+    float sinY = sin(REDIAN(_yAngle));
+    float cosY = cos(REDIAN(_yAngle));
 
     float x = p.x * cosY + p.z * sinY;
     float y = p.y * cosX - p.z * sinX * cosY + p.x * sinX * sinY;
-    float z = 0;//-p.x * sinY * cosX + p.y * sinX + p.z * cosX * cosY;
+    float z = 0;
     return Point3D(x, y, z);
 }

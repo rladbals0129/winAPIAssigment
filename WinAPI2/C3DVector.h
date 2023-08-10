@@ -1,5 +1,7 @@
 #pragma once
 #include "GameNode.h"
+#define PI 3.141592
+#define REDIAN(dig) ((dig) * PI) / 180.0f
 struct Point3D
 {
 	float x, y, z;
