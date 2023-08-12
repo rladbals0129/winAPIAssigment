@@ -9,6 +9,7 @@
 #include "CarRaceGame.h"
 #include "BlackHoll.h"
 #include "C3DVector.h"
+#include "C3DMatrix.h"
 #include "ShootingMap.h"
 
 
@@ -59,7 +60,7 @@ private:
 	CarRaceGame* car;
 	ShootingMap* _shooting;
 	BlackHoll* _blackHole;
-	C3DVector* _c3dvector;
+	C3DMatrix* _c3dvector;
 	SELECT _select;
 	
 	int _gameNum;

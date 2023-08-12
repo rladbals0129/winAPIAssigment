@@ -99,7 +99,7 @@ void ReportManager::update(void)
 						_select = BLACKHOLE;
 						break;
 					case 8:
-						_c3dvector = new C3DVector;
+						_c3dvector = new C3DMatrix;
 						_c3dvector->init();
 
 						_select = C3DVECTOR;
