@@ -10,6 +10,7 @@
 #include "BlackHoll.h"
 #include "C3DVector.h"
 #include "C3DMatrix.h"
+#include "TileMap.h"
 #include "ShootingMap.h"
 
 
@@ -34,7 +35,8 @@ enum SELECT
 	MG13, MG14,
 	MG15, MG16,
 	CAR, BLACKHOLE,
-	C3DVECTOR,SHOOTING
+	C3DVECTOR,SHOOTING,
+	TILEMAP
 
 };
 
@@ -61,6 +63,7 @@ private:
 	ShootingMap* _shooting;
 	BlackHoll* _blackHole;
 	C3DMatrix* _c3dvector;
+	TileMap* _tileMap;
 	SELECT _select;
 	
 	int _gameNum;

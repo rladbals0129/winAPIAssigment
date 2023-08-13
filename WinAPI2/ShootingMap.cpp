@@ -16,7 +16,7 @@ HRESULT ShootingMap::init(void)
 
 void ShootingMap::release(void)
 {
-	GameNode::release();
+	
 
 }
 

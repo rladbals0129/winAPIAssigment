@@ -106,6 +106,12 @@
     <Filter Include="소스 파일\Report\0810슈팅게임">
       <UniqueIdentifier>{4ea4bf77-e449-4617-96c5-2a6e12faf3c0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Report\0810슈팅게임\Player">
+      <UniqueIdentifier>{0a42caae-5c04-45c0-8a81-c6e9b255d473}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\타일맵">
+      <UniqueIdentifier>{34bdb4ad-d175-4f87-b2be-aa9f409a2aaa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -222,17 +228,23 @@
     <ClInclude Include="FontManager.h">
       <Filter>2D FrameWork\FrameWorkManager</Filter>
     </ClInclude>
-    <ClInclude Include="Flame.h">
-      <Filter>소스 파일\Report\0810슈팅게임</Filter>
-    </ClInclude>
-    <ClInclude Include="Rocket.h">
-      <Filter>소스 파일\Report\0810슈팅게임</Filter>
-    </ClInclude>
-    <ClInclude Include="Utils.h">
-      <Filter>소스 파일\Report\0810슈팅게임</Filter>
-    </ClInclude>
     <ClInclude Include="ShootingMap.h">
       <Filter>소스 파일\Report\0810슈팅게임</Filter>
+    </ClInclude>
+    <ClInclude Include="Flame.h">
+      <Filter>소스 파일\Report\0810슈팅게임\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Rocket.h">
+      <Filter>소스 파일\Report\0810슈팅게임\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>2D FrameWork\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullets.h">
+      <Filter>소스 파일\Report\0810슈팅게임</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMap.h">
+      <Filter>소스 파일\Report\타일맵</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -335,17 +347,23 @@
     <ClCompile Include="FontManager.cpp">
       <Filter>2D FrameWork\FrameWorkManager</Filter>
     </ClCompile>
-    <ClCompile Include="Flame.cpp">
-      <Filter>소스 파일\Report\0810슈팅게임</Filter>
-    </ClCompile>
-    <ClCompile Include="Rocket.cpp">
-      <Filter>소스 파일\Report\0810슈팅게임</Filter>
-    </ClCompile>
-    <ClCompile Include="Utils.cpp">
-      <Filter>소스 파일\Report\0810슈팅게임</Filter>
-    </ClCompile>
     <ClCompile Include="ShootingMap.cpp">
       <Filter>소스 파일\Report\0810슈팅게임</Filter>
+    </ClCompile>
+    <ClCompile Include="Flame.cpp">
+      <Filter>소스 파일\Report\0810슈팅게임\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Rocket.cpp">
+      <Filter>소스 파일\Report\0810슈팅게임\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>2D FrameWork\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullets.cpp">
+      <Filter>소스 파일\Report\0810슈팅게임</Filter>
+    </ClCompile>
+    <ClCompile Include="TileMap.cpp">
+      <Filter>소스 파일\Report\타일맵</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

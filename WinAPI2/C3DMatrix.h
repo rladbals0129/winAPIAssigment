@@ -6,8 +6,9 @@ class C3DMatrix : public GameNode
 	{
 		float x, y, z;     // 카메라 위치
 		float pitch, yaw;  // 카메라 회전
+		float zaw;
 
-		Camera() : x(0.0f), y(0.0f), z(0.0f), pitch(0.0f), yaw(0.0f) {}
+		Camera() : x(0.0f), y(0.0f), z(0.0f), pitch(0.0f), yaw(0.0f), zaw(0.0f){}
 	};
 
 	struct Point2D

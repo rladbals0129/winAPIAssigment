@@ -6,7 +6,7 @@ HRESULT ReportManager::init()
 	GameNode::init(true);
 	int x, y;
 	const vector<string> buttonTexts = {
-	"슬라이드퍼즐", "맵이동" ,"지렁이" , "제로공격","프레임이미지", "벽타기","레이싱","블랙홀","3D매트릭스","슈팅게임"};
+	"슬라이드퍼즐", "맵이동" ,"지렁이" , "제로공격","프레임이미지", "벽타기","레이싱","블랙홀","3D매트릭스","슈팅게임","타일맵"};
 	for (int i = 0; i < buttonTexts.size(); i++)
 	{
 		if (i < 10)
@@ -109,7 +109,13 @@ void ReportManager::update(void)
 						_shooting->init();
 
 						_select = SHOOTING;
+						break;
+					case 10:
+						_tileMap = new TileMap;
+						_tileMap->init();
 
+						_select = TILEMAP;
+						break;
 					default:
 						break;
 					}
@@ -159,6 +165,10 @@ void ReportManager::update(void)
 	{
 		_shooting->update();
 	}
+	if (_select == TILEMAP)
+	{
+		_tileMap->update();
+	}
 	//cout << _gameNum << endl;
 	//cout << _select << endl;
 
@@ -194,6 +204,9 @@ void ReportManager::update(void)
 				break;
 			case 9:
 				_shooting->release();
+				break;
+			case 10:
+				_tileMap->release();
 				break;
 
 			}
@@ -272,6 +285,10 @@ void ReportManager::render(void)
 	if (_select == SHOOTING)
 	{
 		_shooting->render();
+	}
+	if (_select == TILEMAP)
+	{
+		_tileMap->render();
 	}
 	this->getBackBuffer()->render(getHDC());
 //	mg12->render();

@@ -1,4 +1,10 @@
-﻿  C3DMatrix.cpp
-  WinAPI2.cpp
-  코드를 생성하고 있습니다...
-  WinAPI2.vcxproj -> C:\Users\kimyoumin\Desktop\과제\winAPI2\Debug\WinAPI2.exe
+﻿  TileMap.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\TileMap.cpp(21,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\TileMap.cpp(21,27): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\TileMap.cpp(126,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\TileMap.cpp(125,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\TileMap.cpp(141,34): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\TileMap.cpp(140,34): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\TileMap.cpp(139,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\TileMap.cpp(138,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  WinAPI2.vcxproj -> C:\Users\le\Desktop\과제\winAPI2\Debug\WinAPI2.exe

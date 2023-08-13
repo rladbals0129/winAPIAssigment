@@ -9,9 +9,11 @@ HRESULT Rocket::init(void)
 	_rc = RectMakeCenter(_x, _y, _image->getWidth(), _image->getHeight());
 	_flame = new Flame;
 
-	_flame->init();
-	_flame->setFlamePos(&_x, &_y);
+	_flame->init("¤·¤·",&_x,&_y);
 
+
+	_missile = new Missile;
+	_missile->init(50,600.f);
 	return S_OK;
 }
 
@@ -47,17 +49,19 @@ void Rocket::update(void)
 
 	if (KEYMANAGER->isOnceKeyDown(VK_SPACE))
 	{
-
+		_missile->fire((_rc.left + _rc.right) / 2, _rc.top);
 	}
 
 
 	_flame->update();
+	_missile->update();
 }
 
 void Rocket::render()
 {
 	_image->render(getMemDC(), _rc.left, _rc.top);
 	_flame->render();
+	_missile->render();
 }
 
 
