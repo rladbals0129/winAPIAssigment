@@ -12,6 +12,13 @@ private:
 	vEnemy _vMinion; //고정된 부모 객체를 기반으로
 	//파생될 적을 저장할 벡터
 	viEnemy _viMinion;
+
+	/*
+	vEnemy 슬라임
+	....등등
+	
+	
+	*/
 public:
 	HRESULT init(void);
 	void release(void);

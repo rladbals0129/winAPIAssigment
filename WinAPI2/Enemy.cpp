@@ -34,37 +34,36 @@ void Enemy::release(void)
 
 void Enemy::update(void)
 {
-	move();
+
 }
 
 void Enemy::render(void)
 {
-	draw();
-	animation();
+
 }
 
-void Enemy::move(void)
-{
-	//적마다 구현 다르므로 자식에서
-}
-
+//void Enemy::move(void)
+//{
+//	//적마다 구현 다르므로 자식에서
+//}
+//
 void Enemy::draw(void)
 {
 	_image->frameRender(getMemDC(), _rc.left, _rc.top,
 		_currentFrameX, _currentFrameY);
 }
-
-void Enemy::animation(void)
-{
-	if (_rndTimeCount + _worldTimeCount <= GetTickCount())
-	{
-		_worldTimeCount = GetTickCount();
-		_currentFrameX++;
-		if (_image->getMaxFrameX() < _currentFrameX)
-		{
-			_currentFrameX = 0;
-
-		}
-	}
-}
-
+//
+//void Enemy::animation(void)
+//{
+//	if (_rndTimeCount + _worldTimeCount <= GetTickCount())
+//	{
+//		_worldTimeCount = GetTickCount();
+//		_currentFrameX++;
+//		if (_image->getMaxFrameX() < _currentFrameX)
+//		{
+//			_currentFrameX = 0;
+//
+//		}
+//	}
+//}
+//
