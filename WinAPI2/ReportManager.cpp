@@ -4,6 +4,7 @@
 HRESULT ReportManager::init()
 {
 	GameNode::init(true);
+
 	int x, y;
 	const vector<string> buttonTexts = {
 	"슬라이드퍼즐", "맵이동" ,"지렁이" , "제로공격","프레임이미지", "벽타기","레이싱","블랙홀","3D매트릭스","슈팅게임","타일맵"};
@@ -224,24 +225,13 @@ void ReportManager::update(void)
 	}
 
 	
-	
-//	mg12->update();
-//	mg13->update();
-//	mg14->update();
-//mg15->update();
+
 }
 
 void ReportManager::render(void)
 {
 	PatBlt(getMemDC(), 0, 0, WINSIZE_X, WINSIZE_Y, BLACKNESS);
-	/*wsprintf(_bt[0].Text, "슬라이드퍼즐");
-	wsprintf(_bt[1].Text, "맵이동");
-	wsprintf(_bt[2].Text, "지렁이");
-	wsprintf(_bt[3].Text, "제로공격");
-	wsprintf(_bt[4].Text, "프레임이미지");
-	wsprintf(_bt[5].Text, "벽 타기");
-	wsprintf(_bt[6].Text, "레이싱");
-	wsprintf(_bt[7].Text, "블랙홀");*/
+
 	if (_select == LOBBY)
 	{
 		lobbyRender();

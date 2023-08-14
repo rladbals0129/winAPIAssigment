@@ -89,7 +89,7 @@ void Missile::move(void)
 
 		_viBullet->fireX += cos(_viBullet->angle) * _viBullet->speed;
 		_viBullet->fireY -= sin(_viBullet->angle) * _viBullet->speed;
-		//_viBullet->fireY -= _viBullet->speed;
+
 		_viBullet->rc = RectMakeCenter(_viBullet->fireX, _viBullet->fireY, _viBullet->img->getFrameWidth(), _viBullet->img->getFrameHeight());
 
 		if (getDistance(_viBullet->x, _viBullet->y, _viBullet->fireX, _viBullet->fireY) > _range)

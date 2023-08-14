@@ -112,6 +112,9 @@
     <Filter Include="소스 파일\Report\타일맵">
       <UniqueIdentifier>{34bdb4ad-d175-4f87-b2be-aa9f409a2aaa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Report\0810슈팅게임\Enemy">
+      <UniqueIdentifier>{7b13889f-f776-4227-bbce-a3177033bc92}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -246,6 +249,15 @@
     <ClInclude Include="TileMap.h">
       <Filter>소스 파일\Report\타일맵</Filter>
     </ClInclude>
+    <ClInclude Include="EnemyManager.h">
+      <Filter>소스 파일\Report\0810슈팅게임\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>소스 파일\Report\0810슈팅게임\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Minion.h">
+      <Filter>소스 파일\Report\0810슈팅게임\Enemy</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinAPI2.cpp">
@@ -364,6 +376,15 @@
     </ClCompile>
     <ClCompile Include="TileMap.cpp">
       <Filter>소스 파일\Report\타일맵</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyManager.cpp">
+      <Filter>소스 파일\Report\0810슈팅게임\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>소스 파일\Report\0810슈팅게임\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Minion.cpp">
+      <Filter>소스 파일\Report\0810슈팅게임\Enemy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
