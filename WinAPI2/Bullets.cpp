@@ -62,7 +62,7 @@ void Missile::fire(float x, float y)
 		_viBullet->x = _viBullet->fireX = x;
 		_viBullet->y = _viBullet->fireY = y;
 		_viBullet->rc = RectMakeCenter(_viBullet->x, _viBullet->y, _viBullet->img->getFrameWidth(), _viBullet->img->getFrameHeight());
-
+		_viBullet->angle = getAngle(x, y, _ptMouse.x, _ptMouse.y);
 		break;
 	}
 }
@@ -85,7 +85,7 @@ void Missile::move(void)
 	for (_viBullet = _vBullet.begin(); _viBullet != _vBullet.end(); ++_viBullet)
 	{
 		if (!_viBullet->fire) continue;
-		_viBullet->angle = getAngle(_viBullet->x, _viBullet->y, _ptMouse.x, _ptMouse.y);
+		
 
 		_viBullet->fireX += cos(_viBullet->angle) * _viBullet->speed;
 		_viBullet->fireY -= sin(_viBullet->angle) * _viBullet->speed;

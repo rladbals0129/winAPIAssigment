@@ -41,6 +41,9 @@ using namespace std;
 #include "FontManager.h"
 #include "Utils.h"
 
+#define PI 3.141592
+#define REDIAN(dig) ((dig) * PI) / 180.0f
+
 using namespace MY_UTIL;
 
 

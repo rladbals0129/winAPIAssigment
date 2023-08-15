@@ -23,8 +23,29 @@ HRESULT Enemy::init(const char* imageName, POINT position)
 	_rndTimeCount = RND->getFromFloatTo(50.f, 150.f);
 
 	_image = IMAGEMANAGER->findImage(imageName);
-	_rc = RectMakeCenter(position.x, position.y,
+	_x = position.x;
+	_y = position.y;
+	_rc = RectMakeCenter(_x, _y,
 		_image->getFrameWidth(), _image->getFrameHeight());
+	
+	return S_OK;
+}
+
+HRESULT Enemy::init(string imageName, POINT position, float startAngle )
+{
+	_worldTimeCount = GetTickCount();
+	_rndTimeCount = RND->getFromFloatTo(50.f, 150.f);
+
+	_image = IMAGEMANAGER->findImage(imageName);
+	_x = position.x;
+	_y = position.y;
+	_rc = RectMakeCenter(_x, _y,
+		_image->getFrameWidth(), _image->getFrameHeight());
+	_startAngle = startAngle;
+	_center = position;
+	_angle = 0.f;
+	radius = 300.f;
+	
 	return S_OK;
 }
 
@@ -42,16 +63,18 @@ void Enemy::render(void)
 
 }
 
-//void Enemy::move(void)
-//{
-//	//적마다 구현 다르므로 자식에서
-//}
-//
+
 void Enemy::draw(void)
 {
 	_image->frameRender(getMemDC(), _rc.left, _rc.top,
 		_currentFrameX, _currentFrameY);
 }
+
+//void Enemy::move(void)
+//{
+//	//적마다 구현 다르므로 자식에서
+//}
+//
 //
 //void Enemy::animation(void)
 //{

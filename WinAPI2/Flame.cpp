@@ -4,7 +4,7 @@
 HRESULT Flame::init(const char* imageName,float* x, float* y)
 {
 	
-	_image = IMAGEMANAGER->addFrameImage("บา", "Resources/Images/ShootingGame/Player/Flame.bmp",
+	_image = IMAGEMANAGER->addFrameImage(imageName, "Resources/Images/ShootingGame/Player/Flame.bmp",
 		432, 297,
 		9, 1,
 		true,

@@ -1,6 +1,7 @@
 #pragma once
 #include "GameNode.h"
 #include "Enemy.h"
+
 class EnemyManager : public GameNode
 {
 private:
@@ -12,6 +13,9 @@ private:
 	vEnemy _vMinion; //고정된 부모 객체를 기반으로
 	//파생될 적을 저장할 벡터
 	viEnemy _viMinion;
+
+	vEnemy _vSnake;
+	viEnemy _viSnake;
 
 	/*
 	vEnemy 슬라임
@@ -26,5 +30,6 @@ public:
 	void render(void);
 
 	void setMinion(void);
+	void setSnake(void);
 };
 

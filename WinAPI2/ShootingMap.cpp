@@ -34,6 +34,7 @@ void ShootingMap::update(void)
 void ShootingMap::render(void)
 {
 	IMAGEMANAGER->findImage("½´ÆÃ¸Ê")->render(getMemDC());
-	_rocket->render(); _em->render();
+	_rocket->render(); 
+	_em->render();
 
 }

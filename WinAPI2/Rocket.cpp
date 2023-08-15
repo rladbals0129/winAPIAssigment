@@ -9,7 +9,7 @@ HRESULT Rocket::init(void)
 	_rc = RectMakeCenter(_x, _y, _image->getWidth(), _image->getHeight());
 	_flame = new Flame;
 
-	_flame->init("¤·¤·",&_x,&_y);
+	_flame->init("ºÒ",&_x,&_y);
 
 
 	_missile = new Missile;
@@ -24,30 +24,30 @@ void Rocket::release(void)
 void Rocket::update(void)
 {
 
-	if (KEYMANAGER->isStayKeyDown(VK_RIGHT) && _rc.right < WINSIZE_X)
+	if (KEYMANAGER->isStayKeyDown('D') && _rc.right < WINSIZE_X)
 	{
 		_x += ROCKET_SPEED;
 	}
 
-	if (KEYMANAGER->isStayKeyDown(VK_LEFT) && _rc.left > 0)
+	if (KEYMANAGER->isStayKeyDown('A') && _rc.left > 0)
 	{
 		_x -= ROCKET_SPEED;
 
 	}
 
-	if (KEYMANAGER->isStayKeyDown(VK_DOWN) && _rc.bottom < WINSIZE_Y)
+	if (KEYMANAGER->isStayKeyDown('S') && _rc.bottom < WINSIZE_Y)
 	{
 		_y += ROCKET_SPEED;
 	}
 
-	if (KEYMANAGER->isStayKeyDown(VK_UP) && _rc.top > 0)
+	if (KEYMANAGER->isStayKeyDown('W') && _rc.top > 0)
 	{
 		_y -= ROCKET_SPEED;
 	}
 
 	_rc = RectMakeCenter(_x, _y, _image->getWidth(), _image->getHeight());
 
-	if (KEYMANAGER->isOnceKeyDown(VK_SPACE))
+	if (KEYMANAGER->isOnceKeyDown(VK_LBUTTON))
 	{
 		_missile->fire((_rc.left + _rc.right) / 2, _rc.top);
 	}
