@@ -15,25 +15,42 @@ protected:
 
 	float _angle;
 	float _startAngle;
+	bool _die;
 	
 	float radius;
 	POINT _center;
-
+	virtual void move(void);
+	virtual void draw(void);
+	virtual void animation(void); 
 	
 public:
-	HRESULT init(void);
-	HRESULT init(const char* imageName, POINT position);
-	HRESULT init(string imageName, POINT position, float startAngle);
+	virtual HRESULT init(void);
+	virtual HRESULT init(const char* imageName, POINT position);
+	virtual HRESULT init(const char* imageName, POINT position, float startAngle);
 	void release(void);
-	void update(void);
-	void render(void);
+	virtual void update(void);
+	virtual void render(void);
+	RECT getPos() { return _rc; }
+
+	bool getDie() { return _die; }
+	void setDie(bool die) { _die = die; }
 	Enemy(void);
 	~Enemy(void) {}
-	void draw(void);
-
 
 };
 
 /*void move(void);
 void draw(void);
-void animation(void);*/
+*/
+
+/*
+	if (_rndTimeCount + _worldTimeCount <= GetTickCount())
+	{
+		_worldTimeCount = GetTickCount();
+		_currentFrameX++;
+		if (_image->getMaxFrameX() < _currentFrameX)
+		{
+			_currentFrameX = 0;
+		}
+	}
+*/

@@ -4,8 +4,8 @@
 HRESULT Missile::init(int bulletMax, float range)
 {
 	_range = range;
-
-	for (int i = 0; i < bulletMax; i++)
+	cout << "부모" << endl;
+	for (int i = 0; i <bulletMax; i++)
 	{
 		tagBullet bullet;
 		ZeroMemory(&bullet, sizeof(tagBullet)); //ZeroMemory : 0으로 채운다 (memset)차이점 -> 1. 0으로초기화 2. 0이아닌 값으로 초기화 가능
@@ -65,6 +65,8 @@ void Missile::fire(float x, float y)
 		_viBullet->angle = getAngle(x, y, _ptMouse.x, _ptMouse.y);
 		break;
 	}
+
+
 }
 
 void Missile::draw(void)
@@ -82,7 +84,7 @@ void Missile::draw(void)
 
 void Missile::move(void)
 {
-	for (_viBullet = _vBullet.begin(); _viBullet != _vBullet.end(); ++_viBullet)
+	for (_viBullet = _vBullet.begin(); _viBullet != _vBullet.end();	++_viBullet )
 	{
 		if (!_viBullet->fire) continue;
 		
@@ -92,10 +94,7 @@ void Missile::move(void)
 
 		_viBullet->rc = RectMakeCenter(_viBullet->fireX, _viBullet->fireY, _viBullet->img->getFrameWidth(), _viBullet->img->getFrameHeight());
 
-		if (getDistance(_viBullet->x, _viBullet->y, _viBullet->fireX, _viBullet->fireY) > _range)
-		{
-			_viBullet->fire = false;
-		}
+	
 
 		if (_viBullet->frameTick + BULLETS_COUNT <= GetTickCount())
 		{
@@ -107,6 +106,12 @@ void Missile::move(void)
 			}
 		}
 
+		if (getDistance(_viBullet->x, _viBullet->y, _viBullet->fireX, _viBullet->fireY) > _range)
+		{
+			_viBullet->fire = false;
+			
+		}
+	
 
 	}
 }
@@ -169,7 +174,7 @@ void MissileM1::fire(float x, float y)
 	bullet.y = bullet.fireY = y;
 	bullet.rc = RectMakeCenter(bullet.x, bullet.y,
 		bullet.img->getFrameWidth(), bullet.img->getFrameHeight());
-
+	bullet.angle = getAngle(x, y, _ptMouse.x, _ptMouse.y);
 	//	_viBullet->rc = RectMakeCenter(_viBullet->x, _viBullet->y,_viBullet->img->getFrameWidth(), _viBullet->img->getFrameHeight());
 	_vBullet.push_back(bullet);
 
@@ -190,8 +195,166 @@ void MissileM1::fire(float x, float y)
 
 void MissileM1::draw(void)
 {
+	for (_viBullet = _vBullet.begin(); _viBullet != _vBullet.end(); ++_viBullet)
+	{
+		_viBullet->img->frameRender(getMemDC(), _viBullet->rc.left, _viBullet->rc.top,
+			_viBullet->img->getFrameX(), _viBullet->img->getFrameY());
+		_viBullet->count++;
+
+		if (_viBullet->count % 5 == 0)
+		{
+			_viBullet->img->setFrameX(_viBullet->img->getFrameX() + 1);
+
+			if (_viBullet->img->getFrameX() >= _viBullet->img->getMaxFrameX())
+			{
+				_viBullet->img->setFrameX(0);
+			}
+			_viBullet->count = 0;
+		}
+	}
 }
 
 void MissileM1::move(void)
 {
+	for (_viBullet = _vBullet.begin(); _viBullet != _vBullet.end();)
+	{
+		_viBullet->x += cos(_viBullet->angle) * _viBullet->speed;
+		_viBullet->y -= sin(_viBullet->angle) * _viBullet->speed;
+		_viBullet->rc = RectMakeCenter(_viBullet->x, _viBullet->y, _viBullet->img->getFrameWidth(),
+			_viBullet->img->getFrameHeight());
+
+		if (_range < getDistance(_viBullet->fireX, _viBullet->fireY, _viBullet->x, _viBullet->y))
+		{
+			SAFE_DELETE(_viBullet->img);
+			_viBullet = _vBullet.erase(_viBullet);
+		}
+		else
+		{
+			++_viBullet;
+		}
+	}
 }
+
+HRESULT Beam::init(int bulletMax, float range)
+{
+	_bulletMax = bulletMax;
+	_range = range;
+
+	return S_OK;
+}
+
+void Beam::release(void)
+{
+	for (_viBullet = _vBullet.begin(); _viBullet != _vBullet.end(); ++_viBullet)
+	{
+		SAFE_DELETE(_viBullet->img);
+	}
+	_vBullet.clear();
+}
+
+void Beam::update(void)
+{
+	move();
+}
+
+void Beam::render()
+{
+	draw();
+}
+
+void Beam::fire(float x, float y)
+{
+	if (_bulletMax <= _vBullet.size()) return;
+
+	tagBullet bullet;
+	ZeroMemory(&bullet, sizeof(tagBullet));
+	bullet.img = new GImage;
+	bullet.img->init("Resources/Images/ShootingGame/Bullet/beam.bmp",
+		0.0f, 0.0f,
+		426, 801,
+		4, 1,
+		true,
+		RGB(255, 0, 255));
+	bullet.speed = 0.1f;
+
+	bullet.x = bullet.fireX = x;
+	bullet.y = bullet.fireY = y;
+	bullet.rc = RectMakeCenter(bullet.x, bullet.y,
+		bullet.img->getFrameWidth(), bullet.img->getFrameHeight());
+
+	_vBullet.push_back(bullet);
+
+
+
+	for (_viBullet = _vBullet.begin(); _viBullet != _vBullet.end(); ++_viBullet)
+	{
+		if (_viBullet->fire) continue;
+
+		_viBullet->fire = true;
+		_viBullet->x = _viBullet->fireX = x;
+		_viBullet->y = _viBullet->fireY = y;
+		_viBullet->rc = RectMakeCenter(_viBullet->x, _viBullet->y, _viBullet->img->getFrameWidth(), _viBullet->img->getFrameHeight());
+
+		break;
+	}
+}
+
+void Beam::draw(void)
+{
+	for (_viBullet = _vBullet.begin(); _viBullet != _vBullet.end(); ++_viBullet)
+	{
+		_viBullet->img->frameRender(getMemDC(), _viBullet->rc.left, _viBullet->rc.top, _viBullet->img->getFrameX(), _viBullet->img->getFrameY());
+
+		_viBullet->count++;
+
+		if (_viBullet->count % 5 == 0)
+		{
+			_viBullet->img->setFrameX(_viBullet->img->getFrameX() + 1);
+
+			if (_viBullet->img->getFrameX() >= _viBullet->img->getMaxFrameX())
+			{
+				_viBullet->img->setFrameX(0);
+			}
+			_viBullet->count = 0;
+		}
+	}
+}
+
+void Beam::move(void)
+{
+	for (_viBullet = _vBullet.begin(); _viBullet != _vBullet.end();)
+	{
+		_viBullet->y -= _viBullet->speed;
+		_viBullet->rc = RectMakeCenter(_viBullet->x, _viBullet->y, _viBullet->img->getFrameWidth(), _viBullet->img->getFrameHeight());
+
+		if (_range < getDistance(_viBullet->fireX, _viBullet->fireY, _viBullet->x, _viBullet->y))
+		{
+			SAFE_DELETE(_viBullet->img);
+			_viBullet = _vBullet.erase(_viBullet);
+		}
+		else
+		{
+			++_viBullet;
+		}
+	}
+}
+/*
+과제1 .
+미사일 충돌처리
+
+-내가 발사한 미사일로 적을 제거한다.
+ㄴ 본인이 생각한 가장 효율적인(객체지향적인)방법으로
+
+과제2.
+체력바 구현
+
+-로켓과 적의 체력바를 구현한다.
+
+2가지버전으로
+
+1. 체력바를 각각의 객체 위에 띄워주는 방법
+
+2. 적 객체 한정으로 체력바를 공유하는 방법
+
+
+*/

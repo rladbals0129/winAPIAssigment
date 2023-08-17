@@ -30,6 +30,8 @@ HRESULT EnemyManager::init(void)
 		true,
 		RGB(255, 0, 255));
 	setSnake();
+
+
 	return S_OK;
 }
 
@@ -54,6 +56,7 @@ void EnemyManager::update(void)
 	{
 		(*_viSnake)->update();
 	}
+	checkCollisions();
 }
 
 void EnemyManager::render()
@@ -61,6 +64,7 @@ void EnemyManager::render()
 	for (_viMinion = _vMinion.begin(); _viMinion != _vMinion.end(); ++_viMinion)
 	{
 		(*_viMinion)->render();
+		//((Minion*)(*_viMinion))->test();
 	}
 
 	for (_viSnake = _vSnake.begin(); _viSnake != _vSnake.end(); ++_viSnake)
@@ -94,9 +98,28 @@ void EnemyManager::setMinion(void)
 		for (int j = 0; j < numCols; j++)
 		{
 			Enemy* jellyFish;
-			jellyFish = new Minion(MovePattern::BOUNCE_PATTERN);
+			jellyFish = new Minion(MovePattern::BOUNCE_PATTERN); //업케스팅
 			jellyFish->init("해파리", PointMake(250 + j * 200, 100 + i * 100));
+			
 			_vMinion.push_back(jellyFish);
+			
+			
+		}
+
+	}
+
+	for (int i = 0; i < numRows; i++)
+	{
+		for (int j = 0; j < numCols; j++)
+		{
+			POINT start = { 250 + j * 200, 100 + i * 100 };
+			Enemy* jellyFish;
+			jellyFish = new Minion(MovePattern::CENTER_CIRCLE_PATTERN); 
+			float startAngle = 0;
+			jellyFish->init("해파리", start,startAngle);
+			_vMinion.push_back(jellyFish);
+
+
 		}
 
 	}
@@ -113,3 +136,52 @@ void EnemyManager::setSnake(void)
 	
 	_vSnake.push_back(snake);
 }
+
+
+void EnemyManager::checkCollisions()
+{
+	vector<tagBullet> missileM1Bullets = _missileM1->getBullets();
+	vector<tagBullet>::iterator ImissileM1Bullets;// = _missileM1->getBullets();
+	vector<tagBullet> beamBullets = _beam->getBullets();
+	vector<tagBullet>::iterator IbeamBullets;
+	for (ImissileM1Bullets = missileM1Bullets.begin(); ImissileM1Bullets != missileM1Bullets.end(); ++ImissileM1Bullets)
+	{
+		
+		for (_viMinion = _vMinion.begin(); _viMinion != _vMinion.end(); ++_viMinion)
+		{
+
+			if (IntersectRect(&_colider, &(*_viMinion)->getPos(), &ImissileM1Bullets->rc))
+			{
+
+				delete (*_viMinion);
+				_vMinion.erase(_viMinion);
+			
+				break;
+			}
+		
+		}
+		
+	}
+
+	for (IbeamBullets = beamBullets.begin(); IbeamBullets != beamBullets.end(); ++IbeamBullets)
+	{
+
+		for (_viMinion = _vMinion.begin(); _viMinion != _vMinion.end(); ++_viMinion)
+		{
+
+			if (IntersectRect(&_colider, &(*_viMinion)->getPos(), &IbeamBullets->rc))
+			{
+
+				delete (*_viMinion);
+				_vMinion.erase(_viMinion);
+
+				break;
+			}
+
+		}
+	}
+	
+
+
+}
+

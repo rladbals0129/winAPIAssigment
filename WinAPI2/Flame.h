@@ -18,8 +18,5 @@ public:
 	void update(void);
 	void render();
 
-
-
-
 };
 

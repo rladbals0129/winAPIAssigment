@@ -25,20 +25,24 @@ struct tagBullet
 //배열처럼 미리 장전을 해두고 발사
 class Missile : public GameNode
 {
-private:
+protected:
 	vector<tagBullet> _vBullet;
 	vector<tagBullet>::iterator _viBullet;
 	float _range;
 
 public:
-	HRESULT init(int bulletMax, float range);
+
+
+	virtual HRESULT init(int bulletMax, float range);
 	void release(void);
 	void update(void);
 	void render();
 
-	void fire(float x, float y);
 	void draw(void);
-	void move(void);
+	//int fire(float x, float y);
+	virtual void fire(float x, float y);
+
+	virtual void move(void);
 
 	Missile() {}
 	~Missile() {}
@@ -65,9 +69,44 @@ public:
 	void fire(float x, float y);
 	void draw(void);
 	void move(void);
+	//RECT getPos()
+	//{
+	//	for (auto& bullet : _vBullet)
+	//	{
+	//		if (!bullet.fire) continue;
 
+	//		return bullet.rc;
+	//	}
+	//}
+	vector<tagBullet>& getBullets(void) { return _vBullet; }
 	MissileM1() {}
 	~MissileM1() {}
+
+};
+
+class Beam : public GameNode
+{
+private:
+	vector<tagBullet> _vBullet;
+	vector<tagBullet>::iterator _viBullet;
+	float _range;
+
+	int _bulletMax; 
+
+public:
+	HRESULT init(int bulletMax, float range);
+	void release(void);
+	void update(void);
+	void render();
+
+	void fire(float x, float y);
+	void draw(void);
+	void move(void);
+	vector<tagBullet>& getBullets(void) { return _vBullet; }
+
+	
+	Beam() {}
+	~Beam() {}
 
 
 };

@@ -4,22 +4,23 @@ enum MovePattern
 {
 	CIRCLE_PATTERN,
 	BOUNCE_PATTERN,
-	RANDOM_PATTERN
+	CENTER_CIRCLE_PATTERN
 };
 class Minion : public Enemy
 {
 private:
-	
+	int _hp;
+	bool _die;
 	MovePattern _movePattern;
 	int _speedX;
 	int _speedY;
 public:
-
+	HRESULT init(const char* imageName, POINT position);
+	HRESULT init(const char* imageName, POINT position, float startAngle);
 	void update(void);
 	void render(void);
-
 	void move();
-	void animation(void);
+	//void animation(void);
 	
 
 	Minion(MovePattern movePattern = CIRCLE_PATTERN);

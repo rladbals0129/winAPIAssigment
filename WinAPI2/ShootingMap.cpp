@@ -3,7 +3,7 @@
 
 HRESULT ShootingMap::init(void)
 {
-	GameNode::init(true);
+	//GameNode::init(true);
 	
 	IMAGEMANAGER->addImage("½´ÆÃ¸Ê", "Resources/Images/ShootingGame/BackGround/ShootingBG.bmp",
 		WINSIZE_X, WINSIZE_Y);
@@ -13,6 +13,8 @@ HRESULT ShootingMap::init(void)
 	_em = new EnemyManager;
 	_em->init();
 
+	_em->setMissileM1(_rocket->getMissileM1());
+	_em->setBeam(_rocket->getBeam());
 	return S_OK;
 }
 
@@ -24,7 +26,7 @@ void ShootingMap::release(void)
 
 void ShootingMap::update(void)
 {
-	GameNode::update();
+	//GameNode::update();
 
 
 	_rocket->update();

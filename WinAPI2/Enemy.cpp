@@ -27,11 +27,11 @@ HRESULT Enemy::init(const char* imageName, POINT position)
 	_y = position.y;
 	_rc = RectMakeCenter(_x, _y,
 		_image->getFrameWidth(), _image->getFrameHeight());
-	
+	_die = false;
 	return S_OK;
 }
 
-HRESULT Enemy::init(string imageName, POINT position, float startAngle )
+HRESULT Enemy::init(const char* imageName, POINT position, float startAngle )
 {
 	_worldTimeCount = GetTickCount();
 	_rndTimeCount = RND->getFromFloatTo(50.f, 150.f);
@@ -45,7 +45,7 @@ HRESULT Enemy::init(string imageName, POINT position, float startAngle )
 	_center = position;
 	_angle = 0.f;
 	radius = 300.f;
-	
+	_die = false;
 	return S_OK;
 }
 
@@ -55,11 +55,20 @@ void Enemy::release(void)
 
 void Enemy::update(void)
 {
-
+	if (!_die)
+	{
+		move();
+	}
+	
 }
 
 void Enemy::render(void)
 {
+	if (!_die)
+	{
+		draw();
+		animation();
+	}
 
 }
 
@@ -70,23 +79,23 @@ void Enemy::draw(void)
 		_currentFrameX, _currentFrameY);
 }
 
-//void Enemy::move(void)
-//{
-//	//적마다 구현 다르므로 자식에서
-//}
-//
-//
-//void Enemy::animation(void)
-//{
-//	if (_rndTimeCount + _worldTimeCount <= GetTickCount())
-//	{
-//		_worldTimeCount = GetTickCount();
-//		_currentFrameX++;
-//		if (_image->getMaxFrameX() < _currentFrameX)
-//		{
-//			_currentFrameX = 0;
-//
-//		}
-//	}
-//}
-//
+void Enemy::move(void)
+{
+	//적마다 구현 다르므로 자식에서
+}
+
+
+void Enemy::animation(void)
+{
+	if (_rndTimeCount + _worldTimeCount <= GetTickCount())
+	{
+		_worldTimeCount = GetTickCount();
+		_currentFrameX++;
+		if (_image->getMaxFrameX() < _currentFrameX)
+		{
+			_currentFrameX = 0;
+
+		}
+	}
+}
+

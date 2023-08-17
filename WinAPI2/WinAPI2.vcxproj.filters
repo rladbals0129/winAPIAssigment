@@ -115,6 +115,9 @@
     <Filter Include="소스 파일\Report\0810슈팅게임\Enemy">
       <UniqueIdentifier>{7b13889f-f776-4227-bbce-a3177033bc92}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Report\0810슈팅게임\Skill">
+      <UniqueIdentifier>{f0016642-86e6-407f-b7b1-af83f18c7576}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -243,9 +246,6 @@
     <ClInclude Include="Utils.h">
       <Filter>2D FrameWork\Utility</Filter>
     </ClInclude>
-    <ClInclude Include="Bullets.h">
-      <Filter>소스 파일\Report\0810슈팅게임</Filter>
-    </ClInclude>
     <ClInclude Include="TileMap.h">
       <Filter>소스 파일\Report\타일맵</Filter>
     </ClInclude>
@@ -260,6 +260,12 @@
     </ClInclude>
     <ClInclude Include="Snake.h">
       <Filter>소스 파일\Report\0810슈팅게임\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullets.h">
+      <Filter>소스 파일\Report\0810슈팅게임</Filter>
+    </ClInclude>
+    <ClInclude Include="Skill.h">
+      <Filter>소스 파일\Report\0810슈팅게임\Skill</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -374,9 +380,6 @@
     <ClCompile Include="Utils.cpp">
       <Filter>2D FrameWork\Utility</Filter>
     </ClCompile>
-    <ClCompile Include="Bullets.cpp">
-      <Filter>소스 파일\Report\0810슈팅게임</Filter>
-    </ClCompile>
     <ClCompile Include="TileMap.cpp">
       <Filter>소스 파일\Report\타일맵</Filter>
     </ClCompile>
@@ -391,6 +394,12 @@
     </ClCompile>
     <ClCompile Include="Snake.cpp">
       <Filter>소스 파일\Report\0810슈팅게임\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullets.cpp">
+      <Filter>소스 파일\Report\0810슈팅게임</Filter>
+    </ClCompile>
+    <ClCompile Include="Skill.cpp">
+      <Filter>소스 파일\Report\0810슈팅게임\Skill</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

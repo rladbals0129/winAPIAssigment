@@ -20,7 +20,7 @@ public:
 	void move();
 	void animation(void);
 
-	void setSnakeState(SnakeState* state) { _state = *state; }
+	
 
 	Snake();
 	~Snake();
