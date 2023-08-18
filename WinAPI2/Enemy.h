@@ -30,7 +30,7 @@ public:
 	void release(void);
 	virtual void update(void);
 	virtual void render(void);
-	RECT getPos() { return _rc; }
+	RECT getRect(void) { return _rc; }
 
 	bool getDie() { return _die; }
 	void setDie(bool die) { _die = die; }

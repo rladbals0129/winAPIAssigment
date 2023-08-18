@@ -280,6 +280,9 @@ void ReportManager::render(void)
 	{
 		_tileMap->render();
 	}
+
+	TIMEMANAGER->render(getMemDC());
+
 	this->getBackBuffer()->render(getHDC());
 //	mg12->render();
 //	mg13->render();

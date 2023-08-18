@@ -12,5 +12,8 @@ public:
 	void release(void);
 	void update(void);
 	void render(void);
+
+	virtual void collision(void);
+	//virtual void fight(void);
 };
 

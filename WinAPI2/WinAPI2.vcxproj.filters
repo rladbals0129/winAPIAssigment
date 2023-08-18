@@ -118,6 +118,12 @@
     <Filter Include="소스 파일\Report\0810슈팅게임\Skill">
       <UniqueIdentifier>{f0016642-86e6-407f-b7b1-af83f18c7576}</UniqueIdentifier>
     </Filter>
+    <Filter Include="2D FrameWork\Time">
+      <UniqueIdentifier>{a03fbfd6-acdb-4cf3-ac88-4ae4a2ae1a23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Report\0810슈팅게임\Stage">
+      <UniqueIdentifier>{feef8edf-cfa0-4fed-9287-d0c9a7a59d63}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -234,9 +240,6 @@
     <ClInclude Include="FontManager.h">
       <Filter>2D FrameWork\FrameWorkManager</Filter>
     </ClInclude>
-    <ClInclude Include="ShootingMap.h">
-      <Filter>소스 파일\Report\0810슈팅게임</Filter>
-    </ClInclude>
     <ClInclude Include="Flame.h">
       <Filter>소스 파일\Report\0810슈팅게임\Player</Filter>
     </ClInclude>
@@ -266,6 +269,15 @@
     </ClInclude>
     <ClInclude Include="Skill.h">
       <Filter>소스 파일\Report\0810슈팅게임\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>2D FrameWork\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>2D FrameWork\FrameWorkManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ShootingMap.h">
+      <Filter>소스 파일\Report\0810슈팅게임\Stage</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -368,9 +380,6 @@
     <ClCompile Include="FontManager.cpp">
       <Filter>2D FrameWork\FrameWorkManager</Filter>
     </ClCompile>
-    <ClCompile Include="ShootingMap.cpp">
-      <Filter>소스 파일\Report\0810슈팅게임</Filter>
-    </ClCompile>
     <ClCompile Include="Flame.cpp">
       <Filter>소스 파일\Report\0810슈팅게임\Player</Filter>
     </ClCompile>
@@ -400,6 +409,18 @@
     </ClCompile>
     <ClCompile Include="Skill.cpp">
       <Filter>소스 파일\Report\0810슈팅게임\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>2D FrameWork\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>2D FrameWork\FrameWorkManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ShootingMap.cpp">
+      <Filter>소스 파일\Report\0810슈팅게임\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>소스 파일\Report\0810슈팅게임\Stage</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

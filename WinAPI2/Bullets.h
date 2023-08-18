@@ -69,19 +69,20 @@ public:
 	void fire(float x, float y);
 	void draw(void);
 	void move(void);
-	//RECT getPos()
-	//{
-	//	for (auto& bullet : _vBullet)
-	//	{
-	//		if (!bullet.fire) continue;
 
-	//		return bullet.rc;
-	//	}
-	//}
-	vector<tagBullet>& getBullets(void) { return _vBullet; }
+	vector<tagBullet> getBullets(void) { return _vBullet; }
+	void removeBullet(int arrNum);
 	MissileM1() {}
 	~MissileM1() {}
+	//RECT getPos()
+//{
+//	for (auto& bullet : _vBullet)
+//	{
+//		if (!bullet.fire) continue;
 
+//		return bullet.rc;
+//	}
+//}
 };
 
 class Beam : public GameNode
@@ -102,11 +103,36 @@ public:
 	void fire(float x, float y);
 	void draw(void);
 	void move(void);
-	vector<tagBullet>& getBullets(void) { return _vBullet; }
+	vector<tagBullet> getBullets(void) { return _vBullet; }
 
+	
 	
 	Beam() {}
 	~Beam() {}
 
+
+};
+
+class EnemyMissile : public GameNode
+{
+private:
+	vector<tagBullet> _vBullet;
+	vector<tagBullet>::iterator _viBullet;
+	float _range;
+
+	int _bulletMax; // 장전이되있지 않기때문에 필요
+
+public:
+	HRESULT init(int bulletMax, float range);
+	void release(void);
+	void update(void);
+	void render();
+
+	void fire(float x, float y);
+	void draw(void);
+	void move(void);
+
+	vector<tagBullet> getBullets(void) { return _vBullet; }
+	void removeBullet(int arrNum);
 
 };

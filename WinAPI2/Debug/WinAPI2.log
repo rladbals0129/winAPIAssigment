@@ -1,33 +1,7 @@
-﻿  Enemy.cpp
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(22,32): warning C4244: '=': 'DWORD'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(26,15): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(27,15): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(28,27): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(28,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(36,32): warning C4244: '=': 'DWORD'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(40,15): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(41,15): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(42,27): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(42,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(92,33): warning C4244: '=': 'DWORD'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  EnemyManager.cpp
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\EnemyManager.cpp(90,21): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\EnemyManager.cpp(137,42): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\EnemyManager.cpp(137,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Minion.cpp
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Minion.cpp(48,29): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Minion.cpp(48,25): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Minion.cpp(67,29): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Minion.cpp(67,25): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Minion.cpp(71,27): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Minion.cpp(71,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  ReportManager.cpp
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\ReportManager.cpp(11,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\ReportManager.cpp(42,22): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\ReportManager.cpp(293,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-  Snake.cpp
-C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Snake.cpp(54,43): warning C4244: '=': 'DWORD'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  WinAPI2.cpp
-  코드를 생성하고 있습니다...
+﻿  Collision.cpp
+C:\Users\rladb\Desktop\과제\winAPI2\WinAPI2\Collision.cpp(6,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\rladb\Desktop\과제\winAPI2\WinAPI2\Collision.cpp(8,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\rladb\Desktop\과제\winAPI2\WinAPI2\Collision.cpp(21,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\rladb\Desktop\과제\winAPI2\WinAPI2\Collision.cpp(23,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   ShootingMap.cpp
-  WinAPI2.vcxproj -> C:\Users\le\Desktop\과제\winAPI2\Debug\WinAPI2.exe
+  WinAPI2.vcxproj -> C:\Users\rladb\Desktop\과제\winAPI2\Debug\WinAPI2.exe

@@ -82,11 +82,27 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hProvInstance, LPSTR lpszCmd
 		return 0;
 	}
 	MSG message;
-	while (GetMessage(&message, 0, 0, 0))
+
+	while (true)
 	{
-		TranslateMessage(&message);
-		DispatchMessage(&message);
+		if (PeekMessage(&message, NULL, 0, 0, PM_REMOVE))
+		{
+			if (message.message == WM_QUIT) break;
+			TranslateMessage(&message);
+			DispatchMessage(&message);
+		}
+		else
+		{
+			TIMEMANAGER->update(60.f);
+			_mg->update();
+			_mg->render();
+		}
 	}
+	//while (GetMessage(&message, 0, 0, 0))
+	//{
+	//	TranslateMessage(&message);
+	//	DispatchMessage(&message);
+	//}
 	_mg->release();
 	UnregisterClass(WINNAME, hInstance);
 

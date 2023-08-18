@@ -13,8 +13,8 @@ HRESULT ShootingMap::init(void)
 	_em = new EnemyManager;
 	_em->init();
 
-	_em->setMissileM1(_rocket->getMissileM1());
-	_em->setBeam(_rocket->getBeam());
+	//_em->setMissileM1(_rocket->getMissileM1());
+	//_em->setBeam(_rocket->getBeam());
 	return S_OK;
 }
 
@@ -31,6 +31,7 @@ void ShootingMap::update(void)
 
 	_rocket->update();
 	_em->update();
+	collision();
 }
 
 void ShootingMap::render(void)

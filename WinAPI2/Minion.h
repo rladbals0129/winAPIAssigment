@@ -14,6 +14,9 @@ private:
 	MovePattern _movePattern;
 	int _speedX;
 	int _speedY;
+	
+	int attackSpeed;
+	int attackDelayTime;
 public:
 	HRESULT init(const char* imageName, POINT position);
 	HRESULT init(const char* imageName, POINT position, float startAngle);

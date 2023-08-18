@@ -143,6 +143,11 @@ void Rocket::usingSkill()
 	}
 }
 
+void Rocket::removeMissile(int arrNum)
+{
+	_missile->removeBullet(arrNum);
+}
+
 
 
 /*

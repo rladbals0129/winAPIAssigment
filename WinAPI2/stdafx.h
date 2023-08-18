@@ -11,6 +11,11 @@
 #pragma comment (lib,"msimg32.lib")
 
 #include <Windows.h>
+#include <mmsystem.h>
+#include <mciapi.h>
+#pragma comment(lib, "Winmm.lib")
+
+//#include <windows.h>
 
 //! C런타임 헤더파일
 #include <stdlib.h> 
@@ -28,7 +33,8 @@
 #include <vector>
 #include <map>
 #include <unordered_map> 
-
+#include <algorithm> 
+#include <functional>
 #include <cassert> 
 #include <bitset>
 
@@ -40,6 +46,7 @@ using namespace std;
 #include "ImageManager.h"
 #include "FontManager.h"
 #include "Utils.h"
+#include "TimeManager.h"
 
 #define PI 3.141592
 #define REDIAN(dig) ((dig) * PI) / 180.0f
@@ -52,6 +59,7 @@ using namespace MY_UTIL;
 #define KEYMANAGER KeyManager::getSingleton()
 #define IMAGEMANAGER ImageManager::getSingleton()
 #define FONTMANAGER FontManager::getSingleton()
+#define TIMEMANAGER TimeManager::getSingleton()
 
 #define WINNAME		(LPTSTR)(TEXT("WindowsAPI"))
 

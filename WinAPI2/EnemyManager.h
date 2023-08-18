@@ -48,10 +48,14 @@ public:
 	void setMinion(void);
 	void setSnake(void);
 
-	void setMissileM1(MissileM1* missileM1) { _missileM1 = missileM1; }
-	void setBeam(Beam* beam) { _beam = beam; }
+	void removeMinion(int arrNum);
 
-	void checkCollisions();
+	vector<Enemy*> getMinions(void) { return _vMinion; }
+	vector<Enemy*> getSnake(void) { return _vSnake; }
+	//void setMissileM1(MissileM1* missileM1) { _missileM1 = missileM1; }
+	//void setBeam(Beam* beam) { _beam = beam; }
+
+	//void checkCollisions();
 };
 
 

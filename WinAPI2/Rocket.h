@@ -40,4 +40,6 @@ public:
 
 	MissileM1* getMissileM1() { return _missile; }
 	Beam* getBeam() { return _beam; }
+	RECT getRect(void) { return _rc; }
+	void removeMissile(int arrNum);
 };

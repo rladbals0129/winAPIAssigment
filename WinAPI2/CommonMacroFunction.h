@@ -57,3 +57,15 @@ inline void EllipaseMakeCenter(HDC hdc, int x, int y, int redius)
 {
 	Ellipse(hdc, x - redius, y - redius, x + redius, y + redius);
 }
+
+inline RECT CollisionAreaResizing(RECT& rcDest, int width, int height)
+{
+	RECT rc =
+	{
+		rcDest.left + width / 2,
+		rcDest.top + height / 2,
+		rcDest.right + width / 2,
+		rcDest.bottom + height / 2
+	};
+	return rc;
+}

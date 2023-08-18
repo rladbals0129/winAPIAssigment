@@ -235,6 +235,12 @@ void MissileM1::move(void)
 	}
 }
 
+void MissileM1::removeBullet(int arrNum)
+{
+	SAFE_DELETE(_vBullet[arrNum].img);
+	_vBullet.erase(_vBullet.begin() + arrNum);
+}
+
 HRESULT Beam::init(int bulletMax, float range)
 {
 	_bulletMax = bulletMax;
@@ -338,6 +344,7 @@ void Beam::move(void)
 		}
 	}
 }
+
 /*
 苞力1 .
 固荤老 面倒贸府
@@ -358,3 +365,36 @@ void Beam::move(void)
 
 
 */
+
+HRESULT EnemyMissile::init(int bulletMax, float range)
+{
+	return S_OK;
+}
+
+void EnemyMissile::release(void)
+{
+}
+
+void EnemyMissile::update(void)
+{
+}
+
+void EnemyMissile::render()
+{
+}
+
+void EnemyMissile::fire(float x, float y)
+{
+}
+
+void EnemyMissile::draw(void)
+{
+}
+
+void EnemyMissile::move(void)
+{
+}
+
+void EnemyMissile::removeBullet(int arrNum)
+{
+}
