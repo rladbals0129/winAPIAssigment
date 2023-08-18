@@ -9,6 +9,8 @@ enum MovePattern
 class Minion : public Enemy
 {
 private:
+	RECT _hpBar;
+	RECT _currentHpBar;
 	int _hp;
 	bool _die;
 	MovePattern _movePattern;

@@ -28,6 +28,9 @@ HRESULT Enemy::init(const char* imageName, POINT position)
 	_rc = RectMakeCenter(_x, _y,
 		_image->getFrameWidth(), _image->getFrameHeight());
 	_die = false;
+
+	IMAGEMANAGER->addImage("체력", "Resources/Images/ShootingGame/UI/hpUI.bmp", 152, 32, true, RGB(255, 0, 255));
+	IMAGEMANAGER->addImage("체력바", "Resources/Images/ShootingGame/UI/hpbarUI.bmp", 117, 20, true, RGB(255, 0, 255));
 	return S_OK;
 }
 
