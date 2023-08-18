@@ -32,6 +32,9 @@ void Minion::update(void)
 void Minion::render(void)
 {
 	Enemy::render();
+	IMAGEMANAGER->render("체력", getMemDC(), _rc.left, _rc.bottom);
+	IMAGEMANAGER->render("체력바", getMemDC(), _rc.left+40, _rc.bottom);
+	
 }
 
 void Minion::move()
@@ -79,7 +82,8 @@ Minion::Minion(MovePattern movePattern) : _movePattern(movePattern)
 
 }
 
-Minion::~Minion() {
+Minion::~Minion()
+{
 	//!Do Nothing
 }
 
