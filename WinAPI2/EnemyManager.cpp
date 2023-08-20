@@ -29,8 +29,7 @@ HRESULT EnemyManager::init(void)
 		38, 32,
 		true,
 		RGB(255, 0, 255));
-	setSnake();
-
+	setSnake();	
 
 	return S_OK;
 }
@@ -46,17 +45,23 @@ void EnemyManager::release(void)
 
 void EnemyManager::update(void)
 {
-	for (_viMinion = _vMinion.begin(); _viMinion != _vMinion.end(); ++_viMinion)
-	{
-		(*_viMinion)->update();
-		
-
-	}
 	for (_viSnake = _vSnake.begin(); _viSnake != _vSnake.end(); ++_viSnake)
 	{
 		(*_viSnake)->update();
 	}
-	//checkCollisions();
+	for (int i = 0; i < _vMinion.size(); i++)
+	{
+		if (!_vIsErased[i])
+		{
+			_vMinion[i]->update();
+			if (_vMinion[i]->getDie() && !_vMinion[i]->isEffectPlaying())
+			{
+				removeMinion(i);
+				--i;
+			}
+		}
+	}
+
 }
 
 void EnemyManager::render()
@@ -64,13 +69,14 @@ void EnemyManager::render()
 	for (_viMinion = _vMinion.begin(); _viMinion != _vMinion.end(); ++_viMinion)
 	{
 		(*_viMinion)->render();
-		//((Minion*)(*_viMinion))->test();
 	}
 
 	for (_viSnake = _vSnake.begin(); _viSnake != _vSnake.end(); ++_viSnake)
 	{
 		(*_viSnake)->render();
 	}
+
+
 }
 
 void EnemyManager::setMinion(void)
@@ -89,6 +95,7 @@ void EnemyManager::setMinion(void)
 			jellyFish->init("해파리", center, startAngle);
 			
 			_vMinion.push_back(jellyFish); // 벡터에 적 객체 추가
+			_vIsErased.push_back(false);
 		}
 	}
 
@@ -102,7 +109,7 @@ void EnemyManager::setMinion(void)
 			jellyFish->init("해파리", PointMake(250 + j * 200, 100 + i * 100));
 			
 			_vMinion.push_back(jellyFish);
-			
+			_vIsErased.push_back(false);
 			
 		}
 
@@ -118,7 +125,7 @@ void EnemyManager::setMinion(void)
 			float startAngle = 0;
 			jellyFish->init("해파리", start,startAngle);
 			_vMinion.push_back(jellyFish);
-
+			_vIsErased.push_back(false);
 
 		}
 
@@ -137,11 +144,16 @@ void EnemyManager::setSnake(void)
 	_vSnake.push_back(snake);
 }
 
+
 void EnemyManager::removeMinion(int arrNum)
 {
 	SAFE_DELETE(_vMinion[arrNum]);
 	_vMinion.erase(_vMinion.begin() + arrNum);
+	_vIsErased.erase(_vIsErased.begin() + arrNum);
 }
+
+
+
 
 
 //void EnemyManager::checkCollisions()

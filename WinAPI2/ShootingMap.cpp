@@ -26,12 +26,12 @@ void ShootingMap::release(void)
 
 void ShootingMap::update(void)
 {
-	//GameNode::update();
+	collision();
+	
 
 
 	_rocket->update();
 	_em->update();
-	collision();
 }
 
 void ShootingMap::render(void)
@@ -39,5 +39,6 @@ void ShootingMap::render(void)
 	IMAGEMANAGER->findImage("½´ÆÃ¸Ê")->render(getMemDC());
 	_rocket->render(); 
 	_em->render();
+	
 
 }

@@ -124,6 +124,9 @@
     <Filter Include="소스 파일\Report\0810슈팅게임\Stage">
       <UniqueIdentifier>{feef8edf-cfa0-4fed-9287-d0c9a7a59d63}</UniqueIdentifier>
     </Filter>
+    <Filter Include="2D FrameWork\gdi+Render">
+      <UniqueIdentifier>{327e261a-407c-4886-bd21-107293f994d4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -279,6 +282,12 @@
     <ClInclude Include="ShootingMap.h">
       <Filter>소스 파일\Report\0810슈팅게임\Stage</Filter>
     </ClInclude>
+    <ClInclude Include="PNGRender.h">
+      <Filter>2D FrameWork\gdi+Render</Filter>
+    </ClInclude>
+    <ClInclude Include="PNGManager.h">
+      <Filter>2D FrameWork\FrameWorkManager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinAPI2.cpp">
@@ -421,6 +430,12 @@
     </ClCompile>
     <ClCompile Include="Collision.cpp">
       <Filter>소스 파일\Report\0810슈팅게임\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="PNGRender.cpp">
+      <Filter>2D FrameWork\gdi+Render</Filter>
+    </ClCompile>
+    <ClCompile Include="PNGManager.cpp">
+      <Filter>2D FrameWork\FrameWorkManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

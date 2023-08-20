@@ -8,7 +8,7 @@ class KeyManager : public SingletonBase<KeyManager>
 private:
 	bitset<KEY_MAX> _keyUp;
 	bitset<KEY_MAX> _keyDown;
-public:
+public: 
 	KeyManager();
 	~KeyManager();
 	HRESULT init();

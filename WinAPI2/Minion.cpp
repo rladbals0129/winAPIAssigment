@@ -8,7 +8,7 @@ HRESULT Minion::init(const char* imageName, POINT position)
 {
 	Enemy::init(imageName, position);
 	_hp = 100;
-	cout << _hp << endl;
+	//cout << _hp << endl;
 	_speedX = 2;
 	_speedY = 2;
 	return S_OK;
@@ -18,7 +18,7 @@ HRESULT Minion::init(const char* imageName, POINT position, float startAngle)
 {
 	Enemy::init(imageName, position, startAngle);
 	_hp = 100;
-	cout << _hp << endl;
+	//cout << _hp << endl;
 	_speedX = 2;
 	_speedY = 2;
 	return S_OK;
@@ -32,8 +32,8 @@ void Minion::update(void)
 void Minion::render(void)
 {
 	Enemy::render();
-	IMAGEMANAGER->render("체력", getMemDC(), _rc.left, _rc.bottom);
-	IMAGEMANAGER->render("체력바", getMemDC(), _rc.left+40, _rc.bottom);
+//	IMAGEMANAGER->render("체력", getMemDC(), _rc.left, _rc.bottom);
+//	IMAGEMANAGER->render("체력바", getMemDC(), _rc.left+40, _rc.bottom);
 	
 }
 

@@ -37,8 +37,10 @@
 #include <functional>
 #include <cassert> 
 #include <bitset>
+#include <string>
 
-using namespace std;
+
+using namespace  std;
 
 #include "CommonMacroFunction.h"
 #include "RandomFunction.h"
@@ -48,10 +50,17 @@ using namespace std;
 #include "Utils.h"
 #include "TimeManager.h"
 
+
+
+using namespace MY_UTIL;
+
+#include <Vfw.h>
+#pragma comment(lib, "vfw32.lib")
+
 #define PI 3.141592
 #define REDIAN(dig) ((dig) * PI) / 180.0f
 
-using namespace MY_UTIL;
+
 
 
 
@@ -60,6 +69,8 @@ using namespace MY_UTIL;
 #define IMAGEMANAGER ImageManager::getSingleton()
 #define FONTMANAGER FontManager::getSingleton()
 #define TIMEMANAGER TimeManager::getSingleton()
+
+
 
 #define WINNAME		(LPTSTR)(TEXT("WindowsAPI"))
 

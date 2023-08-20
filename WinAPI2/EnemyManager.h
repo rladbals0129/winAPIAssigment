@@ -1,7 +1,6 @@
 #pragma once
 #include "GameNode.h"
 #include "Enemy.h"
-#include "Bullets.h"
 
 class EnemyManager : public GameNode
 {
@@ -28,17 +27,17 @@ private:
 private:
 	//√—æÀ √Êµπ
 	RECT _colider;
-	MissileM1* _missileM1;
-	Beam* _beam;
 
 private:
 
 	//ui
 	RECT _hpBar;
 	RECT _currentHpBar;
-	//int* _hp = nullptr;
-	//float* _hpPosX = nullptr;
-	//float* _hpPosY = nullptr;
+	//¿Ã∆Â∆Æ
+	vector<bool> _vIsErased;
+
+private:
+	
 public:
 	HRESULT init(void);
 	void release(void);
@@ -47,15 +46,14 @@ public:
 
 	void setMinion(void);
 	void setSnake(void);
+	
 
 	void removeMinion(int arrNum);
 
 	vector<Enemy*> getMinions(void) { return _vMinion; }
 	vector<Enemy*> getSnake(void) { return _vSnake; }
-	//void setMissileM1(MissileM1* missileM1) { _missileM1 = missileM1; }
-	//void setBeam(Beam* beam) { _beam = beam; }
+	void setErased(int arrNum) { _vIsErased[arrNum] = true; }
 
-	//void checkCollisions();
 };
 
 
