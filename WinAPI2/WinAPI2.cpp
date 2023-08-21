@@ -1,5 +1,6 @@
 ﻿#include "stdafx.h"
 #include "ReportManager.h"
+//#include "PNGRender.h"
 HINSTANCE _hInstance;
 HWND _hWnd;
 POINT _ptMouse;
@@ -13,7 +14,6 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hProvInstance, LPSTR lpszCmd
 {
 	_mg = new ReportManager();
 	_hInstance = hInstance;
-
 	WNDCLASS wndClass;
 	wndClass.cbClsExtra = 0;
 	wndClass.cbWndExtra = 0;
@@ -82,7 +82,11 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hProvInstance, LPSTR lpszCmd
 		return 0;
 	}
 	MSG message;
-
+	//
+	//PNGRender pngRender;
+   // pngRender.init();
+	//pngRender.setUsePngDc(true); 
+	//
 	while (true)
 	{
 		if (PeekMessage(&message, NULL, 0, 0, PM_REMOVE))
@@ -97,12 +101,9 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hProvInstance, LPSTR lpszCmd
 			_mg->update();
 			_mg->render();
 		}
+		
 	}
-	//while (GetMessage(&message, 0, 0, 0))
-	//{
-	//	TranslateMessage(&message);
-	//	DispatchMessage(&message);
-	//}
+
 	_mg->release();
 	UnregisterClass(WINNAME, hInstance);
 

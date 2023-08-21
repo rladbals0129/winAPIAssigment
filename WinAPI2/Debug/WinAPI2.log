@@ -1,8 +1,219 @@
-﻿  Collision.cpp
-C:\Users\kimyoumin\Desktop\과제\winAPI2\WinAPI2\Enemy.h(57,49): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\kimyoumin\Desktop\과제\winAPI2\WinAPI2\Enemy.h(57,64): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\kimyoumin\Desktop\과제\winAPI2\WinAPI2\Collision.cpp(6,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\kimyoumin\Desktop\과제\winAPI2\WinAPI2\Collision.cpp(8,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\kimyoumin\Desktop\과제\winAPI2\WinAPI2\Collision.cpp(20,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\kimyoumin\Desktop\과제\winAPI2\WinAPI2\Collision.cpp(22,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-  WinAPI2.vcxproj -> C:\Users\kimyoumin\Desktop\과제\winAPI2\Debug\WinAPI2.exe
+﻿  BlackHoll.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\BlackHoll.cpp(20,47): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\BlackHoll.cpp(93,89): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\BlackHoll.cpp(93,70): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\BlackHoll.cpp(93,50): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\BlackHoll.cpp(110,48): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+  Bullets.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(64,57): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(64,43): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(65,57): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(65,45): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(95,61): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(95,43): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(101,39): warning C4244: '=': 'DWORD'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(160,17): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(175,45): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(175,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(177,52): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(177,40): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(190,57): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(190,43): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(223,57): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(223,43): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(273,17): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(288,45): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(288,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(302,57): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(302,43): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(334,57): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Bullets.cpp(334,43): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  C3DMatrix.cpp
+  C3DVector.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(51,80): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(51,61): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(51,40): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(52,91): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(52,72): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(52,58): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(53,101): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(53,89): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(53,58): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(54,90): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(54,78): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(54,40): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(55,82): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(55,61): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(55,40): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(56,93): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(56,72): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(56,58): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(57,104): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(57,90): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(57,58): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(58,92): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(58,78): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(58,40): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(101,16): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(102,16): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(103,16): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\C3DVector.cpp(104,16): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  CarRaceGame.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(28,24): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(129,22): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(204,26): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(205,26): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(280,69): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(280,48): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(311,6): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(314,42): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(313,42): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(315,73): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(315,57): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(316,73): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(316,57): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(317,73): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(317,57): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(318,73): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(318,57): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(340,45): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(339,90): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(344,32): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(344,14): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(343,54): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\CarRaceGame.cpp(343,34): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Collision.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Collision.cpp(6,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Collision.cpp(8,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Collision.cpp(20,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Collision.cpp(22,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Enemy.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(24,32): warning C4244: '=': 'DWORD'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(28,15): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(29,15): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(30,27): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(30,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(51,32): warning C4244: '=': 'DWORD'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(55,15): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(56,15): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(57,27): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(57,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(102,7): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(101,7): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Enemy.cpp(146,33): warning C4244: '=': 'DWORD'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  EnemyManager.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\EnemyManager.cpp(52,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\EnemyManager.cpp(94,21): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\EnemyManager.cpp(142,42): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\EnemyManager.cpp(142,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  FontManager.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\FontManager.cpp(33,10): warning C4101: 'charBuffer' :참조되지 않은 지역 변수입니다.
+  GImage.cpp
+  GameNode.cpp
+  Hole.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Hole.cpp(44,53): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Hole.cpp(44,43): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Hole.cpp(44,33): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  ImageManager.cpp
+  KeyManager.cpp
+  MainGame13.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame13.cpp(50,21): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame13.cpp(51,21): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame13.cpp(67,34): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame13.cpp(68,35): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame13.cpp(69,33): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame13.cpp(70,36): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame13.cpp(200,51): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame13.cpp(200,38): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  MainGame15.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame15.cpp(233,43): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame15.cpp(232,90): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame15.cpp(238,43): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame15.cpp(237,90): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame15.cpp(244,42): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame15.cpp(243,45): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  MainGame16.cpp
+  Map0630.cpp
+  Minion.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Minion.cpp(51,29): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Minion.cpp(51,25): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Minion.cpp(70,29): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Minion.cpp(70,25): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Minion.cpp(74,27): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Minion.cpp(74,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Object.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Object.cpp(8,24): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Object.cpp(9,24): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  Player0630.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Player0630.cpp(117,41): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Player0630.cpp(116,86): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Player0630.cpp(118,128): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Player0630.cpp(118,85): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Player0630.cpp(120,146): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Player0630.cpp(120,97): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Player0630.cpp(127,41): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Player0630.cpp(126,86): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Player0630.cpp(128,128): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Player0630.cpp(128,85): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Player0630.cpp(130,146): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Player0630.cpp(130,97): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  ReportManager.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\ReportManager.cpp(11,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\ReportManager.cpp(42,22): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\ReportManager.cpp(296,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Snake.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Snake.cpp(54,43): warning C4244: '=': 'DWORD'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  TileMap.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\TileMap.cpp(21,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\TileMap.cpp(21,27): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\TileMap.cpp(99,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\TileMap.cpp(98,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\TileMap.cpp(110,34): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\TileMap.cpp(109,34): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\TileMap.cpp(108,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\TileMap.cpp(107,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  TimeManager.cpp
+  Timer.cpp
+  WinAPI2.cpp
+  stdafx.cpp
+  코드를 생성하고 있습니다...
+  Flame.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Flame.cpp(29,28): warning C4244: '=': 'DWORD'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Flame.cpp(37,38): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Flame.cpp(37,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  MainGame11.cpp
+  MainGame12.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame12.cpp(44,35): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame12.cpp(45,36): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame12.cpp(47,43): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame12.cpp(48,44): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame12.cpp(52,35): warning C4244: '-=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame12.cpp(53,36): warning C4244: '-=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame12.cpp(56,43): warning C4244: '-=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame12.cpp(57,44): warning C4244: '-=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame12.cpp(63,22): warning C4305: '-=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame12.cpp(82,36): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame12.cpp(83,39): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame12.cpp(94,32): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame12.cpp(95,35): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  MainGame14.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame14.cpp(93,132): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\MainGame14.cpp(93,89): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  PNGRender.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\PNGRender.cpp(119,36): warning C4244: '인수': 'int'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\PNGRender.cpp(119,33): warning C4244: '인수': 'int'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\PNGRender.cpp(121,37): warning C4244: '인수': 'int'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\PNGRender.cpp(121,33): warning C4244: '인수': 'int'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Rocket.cpp
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Rocket.cpp(9,27): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Rocket.cpp(9,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Rocket.cpp(61,27): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Rocket.cpp(61,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Rocket.cpp(72,50): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\le\Desktop\과제\winAPI2\WinAPI2\Rocket.cpp(72,42): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  ShootingMap.cpp
+  Utils.cpp
+  코드를 생성하고 있습니다...
+  WinAPI2.vcxproj -> C:\Users\le\Desktop\과제\winAPI2\Debug\WinAPI2.exe

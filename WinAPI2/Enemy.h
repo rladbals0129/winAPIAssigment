@@ -54,7 +54,7 @@ public:
 
 
 	bool getDie() { return _die; }
-	void setDie(bool die) { _die = die; _diePosX = _x; _diePosY = _y; if (die) playEffect(); }
+	void setDie(bool die) { _die = die; _diePosX =_rc.left - 80; _diePosY = _rc.top - 50; if (die) playEffect(); }
 	bool isEffectPlaying(){ return _effectPlaying; }
 	Enemy(void);
 	~Enemy(void) {}

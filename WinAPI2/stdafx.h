@@ -42,6 +42,7 @@
 
 using namespace  std;
 
+
 #include "CommonMacroFunction.h"
 #include "RandomFunction.h"
 #include "KeyManager.h"

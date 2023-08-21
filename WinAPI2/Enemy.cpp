@@ -97,7 +97,11 @@ void Enemy::render(void)
 	}
 	else if (_effectPlaying)
 	{
-		_effectPNGRender->frameRender(getMemDC(), _x, _y, _effectCurrentFrameX, _effectCurrentFrameY);
+		_effectPNGRender->frameRender(getMemDC(),
+			_x - _effectPNGRender->getFrameWidth() / 2,
+			_y - _effectPNGRender->getFrameHeight() / 2,
+			_effectCurrentFrameX,
+			_effectCurrentFrameY);
 		_effectCurrentFrameX++;
 		if (_effectPNGRender->getMaxFrameX() < _effectCurrentFrameX)
 		{
